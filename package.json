@@ -1,5 +1,8 @@
 {
-	"scripts": {
+    "devDependencies": {
+        "mocha": "*"
+    },
+    "scripts": {
         "test": "mocha alex-web/tests/*"
-    }	
+    }
 }
