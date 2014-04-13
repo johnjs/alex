@@ -13,3 +13,8 @@
 {"level":"info","message":"[2014-04-13T17:11:48+02:00][127.0.0.1] GET /","timestamp":"2014-04-13T15:11:48.986Z"}
 {"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-13T15:15:38.337Z"}
 {"level":"info","message":"[2014-04-13T17:15:38+02:00][127.0.0.1] GET /","timestamp":"2014-04-13T15:15:38.351Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-13T15:30:02.218Z"}
+{"level":"info","message":"[2014-04-13T17:30:04+02:00][127.0.0.1] GET /","timestamp":"2014-04-13T15:30:04.965Z"}
+{"level":"info","message":"[2014-04-13T17:30:05+02:00][127.0.0.1] GET /stylesheets/style.css","timestamp":"2014-04-13T15:30:05.339Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-13T15:30:09.943Z"}
+{"level":"info","message":"[2014-04-13T17:30:09+02:00][127.0.0.1] GET /","timestamp":"2014-04-13T15:30:09.958Z"}
