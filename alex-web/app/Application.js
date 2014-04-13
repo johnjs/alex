@@ -3,6 +3,7 @@ var routes = require('../routes');
 var user = require('../routes/user');
 var http = require('http');
 var path = require('path');
+var logger = require('./utils/Logger');
 
 var Application = function (port) {
     this.port = port;
@@ -14,7 +15,7 @@ var Application = function (port) {
 Application.prototype = {
     port: null,
     app: null,
-    server:null,
+    server: null,
 
     _configuration: function () {
         this.app = express();
@@ -26,6 +27,12 @@ Application.prototype = {
         this.app.use(express.json());
         this.app.use(express.urlencoded());
         this.app.use(express.methodOverride());
+
+        this.app.use(function (req, res, next) {
+            logger.logRequest(req);
+            next();
+        });
+
         this.app.use(this.app.router);
         this.app.use(express.static(path.join(__dirname, '../public')));
 
@@ -39,13 +46,15 @@ Application.prototype = {
         this.app.get('/users', user.list);
     },
 
-    start:function(){
+    start: function () {
         var port = this.app.get('port');
         this.server = http.createServer(this.app).listen(port, function () {
-            console.log('Express server listening on port ' + port);
+            logger.getLogger().info('Express server listening on port ' + port);
         });
+
+        return this.server;
     },
-    shutdown:function(onClose){
+    shutdown: function (onClose) {
         this.server.close(onClose);
     }
 }
