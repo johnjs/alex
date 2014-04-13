@@ -1,8 +1,22 @@
+module.exports = function (Users) {
 
-/*
- * GET users listing.
- */
+    return {
+        find: function (req, res) {
+            var username = req.query.username;
+            var usersData = {};
 
-exports.list = function(req, res){
-  res.send("respond with a resource");
-};
+            if (username) {
+                usersData = {
+                    username: username
+                };
+            }
+
+            Users.find(usersData).then(function (users) {
+                res.send(users);
+            }, function (err) {
+                console.log(err);
+            });
+        }
+    };
+
+}

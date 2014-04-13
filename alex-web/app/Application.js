@@ -1,12 +1,15 @@
 var express = require('express');
 var routes = require('../routes');
-var user = require('../routes/user');
+var usersRouting = require('../routes/user');
 var http = require('http');
 var path = require('path');
 var logger = require('./utils/Logger');
 
-var Application = function (port) {
+var UsersCollection = require('./database/Users');
+
+var Application = function (port, database) {
     this.port = port;
+    this.database = database;
     this._configuration();
     this._initRoutes();
 
@@ -16,6 +19,8 @@ Application.prototype = {
     port: null,
     app: null,
     server: null,
+    database: null,
+    users:null,
 
     _configuration: function () {
         this.app = express();
@@ -29,7 +34,7 @@ Application.prototype = {
         this.app.use(express.methodOverride());
 
         this.app.use(function (req, res, next) {
-            logger.logRequest(req);
+//            logger.logRequest(req);
             next();
         });
 
@@ -42,14 +47,17 @@ Application.prototype = {
     },
 
     _initRoutes: function () {
+        this.users = new UsersCollection(this.database);
+        var ur = usersRouting(this.users);
+
         this.app.get('/', routes.index);
-        this.app.get('/users', user.list);
+        this.app.get('/users', ur.find);
     },
 
     start: function () {
         var port = this.app.get('port');
         this.server = http.createServer(this.app).listen(port, function () {
-            logger.getLogger().info('Express server listening on port ' + port);
+//            logger.getLogger().info('Express server listening on port ' + port);
         });
 
         return this.server;

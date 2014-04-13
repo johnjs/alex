@@ -33,11 +33,11 @@ Logger.prototype = {
         new(winston.transports.Console)({
           'level': 'info',
           'colorize': true
-        }),
-        new(winston.transports.File)({
-          filename: './logs/project.log',
-          maxsize: 1024 * 1024 * 10
         })
+//        new(winston.transports.File)({
+//          filename: './logs/project.log',
+//          maxsize: 1024 * 1024 * 10
+//        })
       ]
     });
     this.logger.setLevels(log.logger.levels);
