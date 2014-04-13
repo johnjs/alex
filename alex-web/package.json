@@ -11,7 +11,6 @@
         "chai": "*"
     },
     "devDependencies": {
-        "express": "3.4.8",
         "grunt": "^0.4.4",
         "grunt-contrib-jshint": "~0.6.3",
         "grunt-contrib-nodeunit": "~0.2.0",
