@@ -1,9 +1,8 @@
 {
-    "devDependencies": {
-        "mocha": "*",
-		"chai": "*"
-    },
+    "name": "alex",
+    "description": "alex",
+    "version":"0.1",
     "scripts": {
-        "test": "mocha alex-web/tests/*"
+        "alex-web": "cd alex-web && grunt"
     }
 }
