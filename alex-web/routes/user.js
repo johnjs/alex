@@ -2,7 +2,7 @@ module.exports = function (Users) {
 
     return {
         find: function (req, res) {
-            var username = req.query.username;
+            var username = req.body.username;
             var usersData = {};
 
             if (username) {

@@ -28,13 +28,12 @@ Application.prototype = {
         this.app.set('views', path.join(__dirname, '../views'));
         this.app.set('view engine', 'jade');
         this.app.use(express.favicon());
-        this.app.use(express.logger('dev'));
         this.app.use(express.json());
         this.app.use(express.urlencoded());
         this.app.use(express.methodOverride());
 
         this.app.use(function (req, res, next) {
-//            logger.logRequest(req);
+            logger.logRequest(req);
             next();
         });
 
@@ -51,13 +50,13 @@ Application.prototype = {
         var ur = usersRouting(this.users);
 
         this.app.get('/', routes.index);
-        this.app.get('/users', ur.find);
+        this.app.post('/users', ur.find);
     },
 
     start: function () {
         var port = this.app.get('port');
         this.server = http.createServer(this.app).listen(port, function () {
-//            logger.getLogger().info('Express server listening on port ' + port);
+            logger.getLogger().info('Express server listening on port ' + port);
         });
 
         return this.server;

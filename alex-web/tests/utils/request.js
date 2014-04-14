@@ -10,6 +10,15 @@ exports.put = function(data, address, expectedCode, callback) {
         .end(callback);
 };
 
+exports.post = function(data, address, expectedCode, callback) {
+    request.post(address)
+        .send(data)
+        .set('Accept', 'application/json')
+        .expect('Content-Type', /json/)
+        .expect(expectedCode)
+        .end(callback);
+};
+
 exports.get = function(address, expectedCode, callback) {
     request.get(address)
         .set('Accept', 'text/html')
