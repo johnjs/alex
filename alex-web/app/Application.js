@@ -64,7 +64,7 @@ Application.prototype = {
     shutdown: function (onClose) {
         this.server.close(onClose);
     }
-}
+};
 
 module.exports = Application;
 

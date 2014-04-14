@@ -20,7 +20,7 @@ Users.prototype = {
     find: function (usersData) {
         return Q.denodeify(this.collection.find.bind(this.collection))(usersData);
     }
-}
+};
 
 module.exports = Users;
 

@@ -9,3 +9,48 @@
 {"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T19:43:00.921Z"}
 {"level":"info","message":"[2014-04-14T21:43:00+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T19:43:00.926Z"}
 {"username":"test1","level":"info","message":"[2014-04-14T21:43:00+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T19:43:00.941Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:10:54.517Z"}
+{"level":"info","message":"[2014-04-14T22:10:54+02:00][127.0.0.1] GET /","timestamp":"2014-04-14T20:10:54.529Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:10:54.804Z"}
+{"level":"info","message":"[2014-04-14T22:10:54+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:10:54.809Z"}
+{"username":"test1","level":"info","message":"[2014-04-14T22:10:54+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:10:54.821Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:12:36.346Z"}
+{"level":"info","message":"[2014-04-14T22:12:36+02:00][127.0.0.1] GET /","timestamp":"2014-04-14T20:12:36.358Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:12:36.641Z"}
+{"level":"info","message":"[2014-04-14T22:12:36+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:12:36.646Z"}
+{"username":"test1","level":"info","message":"[2014-04-14T22:12:36+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:12:36.659Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:17:43.443Z"}
+{"level":"info","message":"[2014-04-14T22:17:43+02:00][127.0.0.1] GET /","timestamp":"2014-04-14T20:17:43.455Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:17:43.731Z"}
+{"level":"info","message":"[2014-04-14T22:17:43+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:17:43.735Z"}
+{"username":"test1","level":"info","message":"[2014-04-14T22:17:43+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:17:43.747Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:18:26.589Z"}
+{"level":"info","message":"[2014-04-14T22:18:26+02:00][127.0.0.1] GET /","timestamp":"2014-04-14T20:18:26.601Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:18:26.878Z"}
+{"level":"info","message":"[2014-04-14T22:18:26+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:18:26.883Z"}
+{"username":"test1","level":"info","message":"[2014-04-14T22:18:26+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:18:26.895Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:19:25.743Z"}
+{"level":"info","message":"[2014-04-14T22:19:25+02:00][127.0.0.1] GET /","timestamp":"2014-04-14T20:19:25.756Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:19:26.036Z"}
+{"level":"info","message":"[2014-04-14T22:19:26+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:19:26.041Z"}
+{"username":"test1","level":"info","message":"[2014-04-14T22:19:26+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:19:26.054Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:20:41.252Z"}
+{"level":"info","message":"[2014-04-14T22:20:41+02:00][127.0.0.1] GET /","timestamp":"2014-04-14T20:20:41.263Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:20:41.535Z"}
+{"level":"info","message":"[2014-04-14T22:20:41+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:20:41.540Z"}
+{"username":"test1","level":"info","message":"[2014-04-14T22:20:41+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:20:41.552Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:21:29.065Z"}
+{"level":"info","message":"[2014-04-14T22:21:29+02:00][127.0.0.1] GET /","timestamp":"2014-04-14T20:21:29.077Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:21:29.356Z"}
+{"level":"info","message":"[2014-04-14T22:21:29+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:21:29.361Z"}
+{"username":"test1","level":"info","message":"[2014-04-14T22:21:29+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:21:29.373Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:22:15.696Z"}
+{"level":"info","message":"[2014-04-14T22:22:15+02:00][127.0.0.1] GET /","timestamp":"2014-04-14T20:22:15.708Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:22:15.984Z"}
+{"level":"info","message":"[2014-04-14T22:22:15+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:22:15.988Z"}
+{"username":"test1","level":"info","message":"[2014-04-14T22:22:16+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:22:16.001Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:23:01.920Z"}
+{"level":"info","message":"[2014-04-14T22:23:01+02:00][127.0.0.1] GET /","timestamp":"2014-04-14T20:23:01.933Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-14T20:23:02.212Z"}
+{"level":"info","message":"[2014-04-14T22:23:02+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:23:02.217Z"}
+{"username":"test1","level":"info","message":"[2014-04-14T22:23:02+02:00][127.0.0.1] POST /users","timestamp":"2014-04-14T20:23:02.229Z"}

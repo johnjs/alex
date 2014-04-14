@@ -24,6 +24,6 @@ Database.prototype = {
         return this._connection.model(collectionName, schema);
     }
 
-}
+};
 
 module.exports = Database;
