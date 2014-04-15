@@ -1,11 +1,11 @@
 var express = require('express');
-var routes = require('../routes');
-var usersRouting = require('../routes/user');
+var routes = require('../routes/index');
 var http = require('http');
 var path = require('path');
 var logger = require('./utils/Logger');
 
 var UsersCollection = require('./database/Users');
+var WordsCollection = require('./database/Words');
 
 var Application = function (port, database) {
     this.port = port;
@@ -20,7 +20,9 @@ Application.prototype = {
     app: null,
     server: null,
     database: null,
-    users:null,
+
+    users: null,
+    words: null,
 
     _configuration: function () {
         this.app = express();
@@ -47,10 +49,13 @@ Application.prototype = {
 
     _initRoutes: function () {
         this.users = new UsersCollection(this.database);
-        var ur = usersRouting(this.users);
+        this.words = new WordsCollection(this.database);
 
-        this.app.get('/', routes.index);
-        this.app.post('/users', ur.find);
+        var routing = routes(this.users, this.words);
+
+        this.app.get('/', routing.index);
+        this.app.post('/users', routing.findUsers);
+        this.app.post('/words', routing.findWords);
     },
 
     start: function () {

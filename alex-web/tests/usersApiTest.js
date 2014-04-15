@@ -7,18 +7,7 @@ describe('Users API test', function () {
     //given
     var SAMPLE_USER_1 = {
         username: 'test1',
-        password: 'testpass',
-        lessons: [
-            {
-
-                words:[
-                    {
-                        item:'hello',
-                        translation:"witaj"
-                    }
-                ]
-            }
-        ]
+        password: 'testpass'
     };
 
     var SAMPLE_USER_2 = {
@@ -52,9 +41,6 @@ describe('Users API test', function () {
 
             //then
             expect(res.body[0].username).to.be.equal(SAMPLE_USER_1.username);
-            expect(res.body[0].lessons).to.have.length(1);
-            expect(res.body[0].lessons[0].words).to.have.length(1);
-
             done();
         });
     });
