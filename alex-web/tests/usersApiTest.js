@@ -1,5 +1,5 @@
 var app = require('./../app_test');
-var request = require('./utils/request');
+var requestUtils = require('./utils/request');
 var expect = require('chai').expect;
 var Q = require('q');
 
@@ -23,9 +23,12 @@ describe('Users API test', function () {
         ]);
     };
 
+    var request;
+
     before(function (done) {
         _prepareDatabase().then(function () {
             app.start().on('listening', done);
+            request = requestUtils(app.app);
         });
     });
 
