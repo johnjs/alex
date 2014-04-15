@@ -1,7 +1,7 @@
 var app = require('./../app_test');
 var request = require('./utils/request');
 var expect = require('chai').expect;
-var Q = require('Q');
+var Q = require('q');
 
 describe('Users API test', function () {
 
