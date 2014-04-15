@@ -1,3 +1,5 @@
+var logger = require('../app/utils/Logger');
+
 module.exports = function (Users) {
 
     return {
@@ -14,7 +16,7 @@ module.exports = function (Users) {
             Users.find(usersData).then(function (users) {
                 res.send(users);
             }, function (err) {
-                console.log(err);
+                logger.logError(err);
             });
         }
     };
