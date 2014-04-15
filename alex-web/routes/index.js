@@ -3,7 +3,17 @@ var Response = require('../app/utils/Response');
 
 module.exports = function (Users, Words) {
 
+    var _extractWordsDataFromRequest = function (req) {
+        return {
+            username: req.body.username,
+            lessonId: req.body.lessonId,
+            word: req.body.word,
+            translation: req.body.translation
+        };
+    };
+
     return {
+
         index: function (req, res) {
             res.render('index', { title: 'Express' });
         },
@@ -27,15 +37,21 @@ module.exports = function (Users, Words) {
         },
 
         createWord: function (req, res) {
-            var wordsData = {
-                username: req.body.username,
-                lessonId: req.body.lessonId,
-                word: req.body.word,
-                translation: req.body.translation
-            };
+            var wordsData = _extractWordsDataFromRequest(req);
 
             Words.save(wordsData).then(function () {
                 Response.ok("Word added!", res);
+            }, function (err) {
+                Response.badRequest(err, res);
+            });
+        },
+
+        updateWord: function (req, res) {
+            var wordId = req.params.id;
+            var wordsData = _extractWordsDataFromRequest(req);
+
+            Words.update(wordId, wordsData).then(function () {
+                Response.ok("Word updated!", res);
             }, function (err) {
                 Response.badRequest(err, res);
             });

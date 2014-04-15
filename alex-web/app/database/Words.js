@@ -25,14 +25,22 @@ Words.prototype = {
         return Q.denodeify(newWord.save.bind(newWord))();
     },
 
-    _validateIfAllFieldsAreSet: function (wordsData) {
-        return _.all(_.values(wordsData), function (value) {
-            return !_.isNull(value) && !_.isUndefined(value);
+    update: function (id, wordsData) {
+        wordsData = _.omit(wordsData, function (value) {
+            return _.isUndefined(value);
         });
+
+        return Q.denodeify(this.collection.update.bind(this.collection))(id, wordsData);
     },
 
     find: function (filtering) {
         return Q.denodeify(this.collection.find.bind(this.collection))(filtering);
+    },
+
+    _validateIfAllFieldsAreSet: function (wordsData) {
+        return _.all(_.values(wordsData), function (value) {
+            return !_.isNull(value) && !_.isUndefined(value);
+        });
     }
 };
 

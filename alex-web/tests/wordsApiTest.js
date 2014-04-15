@@ -104,6 +104,41 @@ describe('Words API test', function () {
 
     });
 
+    describe('Update', function () {
+        it('should update existing word', function (done) {
+            //given
+            var word = {
+                word: 'hello',
+                translation: 'witaj'
+            };
+
+            //when - find existing word
+            app.words.find({username: 'user1', lessonId: 'lesson1'}).then(function(wordsBeforeUpdate){
+                var oldWord = wordsBeforeUpdate[0];
+
+
+                //then - update its attributes
+                request.post(word, '/words/'+oldWord._id, 200, function(){
+
+                    //then - find that word again
+                    app.words.find({_id:oldWord._id}).then(function(wordsAfterUpdate){
+                        var actualWord = wordsAfterUpdate[0];
+
+                        //then - check if a value of a given attribute has changed
+                        expect(actualWord.translation).to.equal(word.translation);
+
+                        done();
+
+                    });
+
+                });
+
+            });
+
+        });
+
+    });
+
     after(function (done) {
         app.database._connection.collections['words'].drop(function (err) {
             app.shutdown(done);

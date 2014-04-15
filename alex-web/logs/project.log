@@ -1,0 +1,108 @@
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:02:20.348Z"}
+{"level":"info","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] GET /","timestamp":"2014-04-15T19:02:20.360Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:02:20.678Z"}
+{"level":"info","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:02:20.685Z"}
+{"username":"test1","level":"info","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:02:20.702Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:02:20.715Z"}
+{"level":"info","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:02:20.717Z"}
+{"username":"user1","level":"info","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:02:20.721Z"}
+{"username":"user1","lessonId":"lesson1","level":"info","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:02:20.724Z"}
+{"username":"user1","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:02:20.727Z"}
+{"level":"info","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] Word added!","timestamp":"2014-04-15T19:02:20.728Z"}
+{"username":"user1","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:02:20.731Z"}
+{"level":"warn","message":"[2014-04-15T21:02:20+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-04-15T19:02:20.732Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:18:35.581Z"}
+{"level":"info","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] GET /","timestamp":"2014-04-15T19:18:35.593Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:18:35.872Z"}
+{"level":"info","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:18:35.876Z"}
+{"username":"test1","level":"info","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:18:35.886Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:18:35.900Z"}
+{"level":"info","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:18:35.902Z"}
+{"username":"user1","level":"info","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:18:35.906Z"}
+{"username":"user1","lessonId":"lesson1","level":"info","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:18:35.909Z"}
+{"username":"user1","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:18:35.912Z"}
+{"level":"info","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] Word added!","timestamp":"2014-04-15T19:18:35.913Z"}
+{"username":"user1","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:18:35.916Z"}
+{"level":"warn","message":"[2014-04-15T21:18:35+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-04-15T19:18:35.917Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:19:13.914Z"}
+{"level":"info","message":"[2014-04-15T21:19:13+02:00][127.0.0.1] GET /","timestamp":"2014-04-15T19:19:13.926Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:19:14.207Z"}
+{"level":"info","message":"[2014-04-15T21:19:14+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:19:14.211Z"}
+{"username":"test1","level":"info","message":"[2014-04-15T21:19:14+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:19:14.222Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:19:14.241Z"}
+{"level":"info","message":"[2014-04-15T21:19:14+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:19:14.243Z"}
+{"username":"user1","level":"info","message":"[2014-04-15T21:19:14+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:19:14.247Z"}
+{"username":"user1","lessonId":"lesson1","level":"info","message":"[2014-04-15T21:19:14+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:19:14.251Z"}
+{"username":"user1","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-04-15T21:19:14+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:19:14.254Z"}
+{"level":"info","message":"[2014-04-15T21:19:14+02:00][127.0.0.1] Word added!","timestamp":"2014-04-15T19:19:14.255Z"}
+{"username":"user1","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-04-15T21:19:14+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:19:14.259Z"}
+{"level":"warn","message":"[2014-04-15T21:19:14+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-04-15T19:19:14.259Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:19:40.673Z"}
+{"level":"info","message":"[2014-04-15T21:19:40+02:00][127.0.0.1] GET /","timestamp":"2014-04-15T19:19:40.685Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:19:40.964Z"}
+{"level":"info","message":"[2014-04-15T21:19:40+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:19:40.968Z"}
+{"username":"test1","level":"info","message":"[2014-04-15T21:19:40+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:19:40.978Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:19:40.992Z"}
+{"level":"info","message":"[2014-04-15T21:19:40+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:19:40.993Z"}
+{"username":"user1","level":"info","message":"[2014-04-15T21:19:40+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:19:40.997Z"}
+{"username":"user1","lessonId":"lesson1","level":"info","message":"[2014-04-15T21:19:41+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:19:41.001Z"}
+{"username":"user1","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-04-15T21:19:41+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:19:41.004Z"}
+{"level":"info","message":"[2014-04-15T21:19:41+02:00][127.0.0.1] Word added!","timestamp":"2014-04-15T19:19:41.005Z"}
+{"username":"user1","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-04-15T21:19:41+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:19:41.008Z"}
+{"level":"warn","message":"[2014-04-15T21:19:41+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-04-15T19:19:41.009Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:20:13.735Z"}
+{"level":"info","message":"[2014-04-15T21:20:13+02:00][127.0.0.1] GET /","timestamp":"2014-04-15T19:20:13.748Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:20:14.023Z"}
+{"level":"info","message":"[2014-04-15T21:20:14+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:20:14.027Z"}
+{"username":"test1","level":"info","message":"[2014-04-15T21:20:14+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:20:14.038Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:20:14.052Z"}
+{"level":"info","message":"[2014-04-15T21:20:14+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:20:14.053Z"}
+{"username":"user1","level":"info","message":"[2014-04-15T21:20:14+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:20:14.057Z"}
+{"username":"user1","lessonId":"lesson1","level":"info","message":"[2014-04-15T21:20:14+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:20:14.060Z"}
+{"username":"user1","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-04-15T21:20:14+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:20:14.063Z"}
+{"level":"info","message":"[2014-04-15T21:20:14+02:00][127.0.0.1] Word added!","timestamp":"2014-04-15T19:20:14.065Z"}
+{"username":"user1","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-04-15T21:20:14+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:20:14.067Z"}
+{"level":"warn","message":"[2014-04-15T21:20:14+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-04-15T19:20:14.068Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:21:02.814Z"}
+{"level":"info","message":"[2014-04-15T21:21:02+02:00][127.0.0.1] GET /","timestamp":"2014-04-15T19:21:02.826Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:21:03.109Z"}
+{"level":"info","message":"[2014-04-15T21:21:03+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:21:03.115Z"}
+{"username":"test1","level":"info","message":"[2014-04-15T21:21:03+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:21:03.126Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:21:03.142Z"}
+{"level":"info","message":"[2014-04-15T21:21:03+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:21:03.144Z"}
+{"username":"user1","level":"info","message":"[2014-04-15T21:21:03+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:21:03.148Z"}
+{"username":"user1","lessonId":"lesson1","level":"info","message":"[2014-04-15T21:21:03+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:21:03.152Z"}
+{"username":"user1","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-04-15T21:21:03+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:21:03.154Z"}
+{"level":"info","message":"[2014-04-15T21:21:03+02:00][127.0.0.1] Word added!","timestamp":"2014-04-15T19:21:03.156Z"}
+{"username":"user1","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-04-15T21:21:03+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:21:03.159Z"}
+{"level":"warn","message":"[2014-04-15T21:21:03+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-04-15T19:21:03.159Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:22:00.942Z"}
+{"level":"info","message":"[2014-04-15T21:22:00+02:00][127.0.0.1] GET /","timestamp":"2014-04-15T19:22:00.953Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:22:01.234Z"}
+{"level":"info","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:22:01.237Z"}
+{"username":"test1","level":"info","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:22:01.247Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:22:01.261Z"}
+{"level":"info","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:22:01.263Z"}
+{"username":"user1","level":"info","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:22:01.267Z"}
+{"username":"user1","lessonId":"lesson1","level":"info","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:22:01.271Z"}
+{"username":"user1","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:22:01.274Z"}
+{"level":"info","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] Word added!","timestamp":"2014-04-15T19:22:01.275Z"}
+{"username":"user1","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:22:01.278Z"}
+{"level":"warn","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-04-15T19:22:01.279Z"}
+{"word":"hello","translation":"witaj","level":"info","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] POST /words/534d86d95e7b35d2169e8875","timestamp":"2014-04-15T19:22:01.284Z"}
+{"level":"warn","message":"[2014-04-15T21:22:01+02:00][127.0.0.1] TypeError: Object.keys called on non-object","timestamp":"2014-04-15T19:22:01.287Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:22:12.426Z"}
+{"level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] GET /","timestamp":"2014-04-15T19:22:12.438Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:22:12.720Z"}
+{"level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:22:12.729Z"}
+{"username":"test1","level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] POST /users","timestamp":"2014-04-15T19:22:12.740Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-04-15T19:22:12.747Z"}
+{"level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:22:12.749Z"}
+{"username":"user1","level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:22:12.752Z"}
+{"username":"user1","lessonId":"lesson1","level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] POST /words","timestamp":"2014-04-15T19:22:12.756Z"}
+{"username":"user1","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:22:12.759Z"}
+{"level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] Word added!","timestamp":"2014-04-15T19:22:12.760Z"}
+{"username":"user1","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] PUT /words","timestamp":"2014-04-15T19:22:12.763Z"}
+{"level":"warn","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-04-15T19:22:12.764Z"}
+{"word":"hello","translation":"witaj","level":"info","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] POST /words/534d86e44897cae61692249a","timestamp":"2014-04-15T19:22:12.769Z"}
+{"level":"warn","message":"[2014-04-15T21:22:12+02:00][127.0.0.1] TypeError: Object.keys called on non-object","timestamp":"2014-04-15T19:22:12.772Z"}

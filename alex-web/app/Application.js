@@ -58,7 +58,7 @@ Application.prototype = {
 
         this.app.put('/words', routing.createWord);
         this.app.post('/words', routing.findWords);
-//        this.app.post('/words/:id', routing.updateWord);
+        this.app.post('/words/:id', routing.updateWord);
 //        this.app.del('/words/:id', routing.deleteWord);
     },
 
