@@ -44,34 +44,64 @@ describe('Words API test', function () {
         });
     });
 
-    it('should return all words', function (done) {
-        //when
-        request.post({}, '/words', 200, function (err, res) {
+    describe('Find', function () {
+        it('should return all words', function (done) {
+            //when
+            request.post({}, '/words', 200, function (err, res) {
 
-            //then
-            expect(res.body).to.have.length(3);
-            done();
+                //then
+                expect(res.body).to.have.length(3);
+                done();
+            });
+        });
+
+        it('should return words of user "user1"', function (done) {
+            //when
+            request.post({username: 'user1'}, '/words', 200, function (err, res) {
+
+                //then
+                expect(res.body).to.have.length(2);
+                done();
+            });
+        });
+
+        it('should return words of user "user1" from lesson "lesson1"', function (done) {
+            //when
+            request.post({username: 'user1', lessonId: 'lesson1'}, '/words', 200, function (err, res) {
+
+                //then
+                expect(res.body).to.have.length(1);
+                done();
+            });
         });
     });
 
-    it('should return words of user "user1"', function (done) {
-        //when
-        request.post({username: 'user1'}, '/words', 200, function (err, res) {
+    describe('Create', function () {
+        it('should create a new word', function (done) {
+            //given
+            var word = {
+                username: 'user1',
+                lessonId: 'lesson1',
+                word: 'dinner',
+                translation: 'obiad'
+            };
 
-            //then
-            expect(res.body).to.have.length(2);
-            done();
+            //when -> then expect response
+            request.put(word, '/words', 200, done);
         });
-    });
 
-    it('should return words of user "user1" from lesson "lesson1"', function (done) {
-        //when
-        request.post({username: 'user1', lessonId: 'lesson1'}, '/words', 200, function (err, res) {
+        it('should return an error if any of word attributes is not set', function (done) {
+            //given
+            var word = {
+                username: 'user1',
+                lessonId: 'lesson1',
+                translation: 'obiad'
+            };
 
-            //then
-            expect(res.body).to.have.length(1);
-            done();
+            //when -> then expect response
+            request.put(word, '/words', 400, done);
         });
+
     });
 
     after(function (done) {

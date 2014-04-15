@@ -65,4 +65,6 @@ Logger.prototype = {
 
 };
 
-module.exports = new Logger();
+var logger = new Logger();
+
+module.exports = logger;
