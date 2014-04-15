@@ -37,7 +37,7 @@ describe('Words API test', function () {
 
     var request;
 
-    before(function (done) {
+    beforeEach(function (done) {
         _prepareDatabase().then(function () {
             app.start().on('listening', done);
             request = requestUtils(app.app);
@@ -134,12 +134,36 @@ describe('Words API test', function () {
                 });
 
             });
-
         });
-
     });
 
-    after(function (done) {
+    describe('Remove', function () {
+        it('should remove existing word', function (done) {
+            //given
+
+            //when - find existing word
+            app.words.find(SAMPLE_WORD_3).then(function(wordsBeforeRemoval){
+                var wordToBeRemoved = wordsBeforeRemoval[0];
+
+                //then - remove it
+                request.delete('/words/'+wordToBeRemoved._id, 200, function(){
+
+                    //then - find that word again
+                    app.words.find({_id:wordToBeRemoved._id}).then(function(wordsAfterRemoval){
+
+                        //then - check if the word has been removed
+                        expect(wordsAfterRemoval).to.have.length(0);
+                        done();
+
+                    });
+
+                });
+
+            });
+        });
+    });
+
+    afterEach(function (done) {
         app.database._connection.collections['words'].drop(function (err) {
             app.shutdown(done);
         });

@@ -55,7 +55,18 @@ module.exports = function (Users, Words) {
             }, function (err) {
                 Response.badRequest(err, res);
             });
+        },
+
+        removeWord: function (req, res) {
+            var wordId = req.params.id;
+
+            Words.remove(wordId).then(function () {
+                Response.ok("Word removed!", res);
+            }, function (err) {
+                Response.badRequest(err, res);
+            });
         }
+
 
     };
 

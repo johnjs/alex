@@ -23,7 +23,8 @@
             "strict": true,
             "require": true,
             "before": true,
-            "after": true
+            "after": true,
+            "afterEach":true
         }
     },
     "backend": {

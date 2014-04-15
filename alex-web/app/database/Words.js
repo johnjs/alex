@@ -33,6 +33,10 @@ Words.prototype = {
         return Q.denodeify(this.collection.update.bind(this.collection))(id, wordsData);
     },
 
+    remove: function (id) {
+        return Q.denodeify(this.collection.remove.bind(this.collection))({_id: id});
+    },
+
     find: function (filtering) {
         return Q.denodeify(this.collection.find.bind(this.collection))(filtering);
     },
