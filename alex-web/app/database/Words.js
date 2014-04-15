@@ -2,8 +2,8 @@ var Q = require('q');
 
 var Words = function (database) {
     var wordsSchema = database.schema({
-        username:'string',
-        lessonId:'string',
+        username: 'string',
+        lessonId: 'string',
         word: 'string',
         translation: 'string'
     });
@@ -12,6 +12,11 @@ var Words = function (database) {
 
 Words.prototype = {
     collection: null,
+
+    save: function (wordsData) {
+        var newWord = new this.collection(wordsData);
+        return Q.denodeify(newWord.save.bind(newWord))();
+    },
 
     find: function (filtering) {
         return Q.denodeify(this.collection.find.bind(this.collection))(filtering);

@@ -14,7 +14,8 @@ Users.prototype = {
     collection: null,
 
     save: function (usersData) {
-        new this.collection(usersData).save();
+        var newUser = new this.collection(usersData);
+        return Q.denodeify(newUser.save.bind(newUser))();
     },
 
     find: function (usersData) {

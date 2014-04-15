@@ -1,6 +1,7 @@
 var app = require('./../app_test');
 var request = require('./utils/request');
 var expect = require('chai').expect;
+var Q = require('Q');
 
 describe('Users API test', function () {
 
@@ -16,13 +17,16 @@ describe('Users API test', function () {
     };
 
     var _prepareDatabase = function () {
-        app.users.save(SAMPLE_USER_1);
-        app.users.save(SAMPLE_USER_2);
+        return Q.all([
+            app.users.save(SAMPLE_USER_1),
+            app.users.save(SAMPLE_USER_2)
+        ]);
     };
 
     before(function (done) {
-        _prepareDatabase();
-        app.start().on('listening', done);
+        _prepareDatabase().then(function () {
+            app.start().on('listening', done);
+        });
     });
 
     it('should return all users', function (done) {
