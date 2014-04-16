@@ -1,11 +1,9 @@
-var Database  = require('./app/database/Database');
 var Application = require('./app/Application');
 var logger = require('./app/utils/Logger');
+var database = require('./tests/utils/TestDatabase');
 
 logger.setTestingMode();
 
-var db = new Database('localhost', 'alex-test');
-
-var app = new Application(process.env.PORT || 3000, db);
+var app = new Application(process.env.PORT || 3000, database);
 
 module.exports = app;

@@ -16,10 +16,6 @@ Database.prototype = {
         this._connection = mongoose.createConnection(this._address, this._dbName);
     },
 
-    schema: function (schema) {
-        return mongoose.Schema(schema);
-    },
-
     model: function(collectionName, schema){
         return this._connection.model(collectionName, schema);
     }

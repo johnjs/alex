@@ -10,7 +10,8 @@
     "express": "3.4.8",
     "jade": "*",
     "chai": "*",
-    "underscore": "1.6.0"
+    "underscore": "1.6.0",
+    "bcrypt-nodejs": "0.0.3"
   },
   "devDependencies": {
     "grunt": "*",

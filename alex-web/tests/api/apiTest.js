@@ -1,5 +1,5 @@
-var app = require('./../app_test');
-var requestUtils = require('./utils/request');
+var app = require('./../../app_test');
+var requestUtils = require('./../utils/request');
 
 
 describe('Basic API test', function () {

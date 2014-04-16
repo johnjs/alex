@@ -1,5 +1,5 @@
-var app = require('./../app_test');
-var requestUtils = require('./utils/request');
+var app = require('./../../app_test');
+var requestUtils = require('./../utils/request');
 var expect = require('chai').expect;
 var Q = require('q');
 

@@ -1,8 +1,9 @@
 var Q = require('q');
 var _ = require('underscore');
+var mongoose = require('mongoose');
 
 var Words = function (database) {
-    var wordsSchema = database.schema({
+    var wordsSchema = mongoose.Schema({
         username: 'string',
         lessonId: 'string',
         word: 'string',
