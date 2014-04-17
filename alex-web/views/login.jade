@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+  title Alex
+  body
+  div(class="container")
+     div(class="col-sm-6 col-sm-offset-3")
+        h1
+           span(class="fa fa-sign-in") Login
+        div(class="alert alert-danger") #{message}
+        form(action="/login" method="post")
+           div(class="form-group")
+              label Login
+              input(type="text", class="form-control", name="username")
+           div(class="form-group")
+              label Password
+              input(type="password", class="form-control", name="password")
+           button(type="submit" class="btn btn-warning btn-lg") Login

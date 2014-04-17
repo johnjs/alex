@@ -1,7 +1,7 @@
 var logger = require('../app/utils/Logger');
 var Response = require('../app/utils/Response');
 
-module.exports = function (Users, Words) {
+module.exports = function (Words) {
 
     var _extractWordsDataFromRequest = function (req) {
         return {
@@ -13,19 +13,6 @@ module.exports = function (Users, Words) {
     };
 
     return {
-
-        index: function (req, res) {
-            res.render('index', { title: 'Express' });
-        },
-
-        findUsers: function (req, res) {
-            var filtering = req.body || {};
-            Users.find(filtering).then(function (users) {
-                Response.okJson(users, res);
-            }, function (err) {
-                Response.badRequest(err, res);
-            });
-        },
 
         findWords: function (req, res) {
             var filtering = req.body || {};
@@ -66,8 +53,5 @@ module.exports = function (Users, Words) {
                 Response.badRequest(err, res);
             });
         }
-
-
     };
-
 };

@@ -18,7 +18,6 @@ module.exports = function (app) {
             request.post(address)
                 .send(data)
                 .set('Accept', 'application/json')
-                .expect('Content-Type', /json/)
                 .expect(expectedCode)
                 .end(callback);
         },
@@ -26,7 +25,6 @@ module.exports = function (app) {
         get: function (address, expectedCode, callback) {
             request.get(address)
                 .set('Accept', 'text/html')
-                .expect('Content-Type', /charset=utf-8/)
                 .expect(expectedCode, callback);
         },
 

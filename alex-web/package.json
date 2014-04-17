@@ -11,7 +11,10 @@
     "jade": "*",
     "chai": "*",
     "underscore": "1.6.0",
-    "bcrypt-nodejs": "0.0.3"
+    "bcrypt-nodejs": "0.0.3",
+    "passport": "0.2.0",
+    "connect-flash": "0.1.1",
+    "passport-local": "1.0.0"
   },
   "devDependencies": {
     "grunt": "*",
