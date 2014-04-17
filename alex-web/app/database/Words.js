@@ -1,14 +1,9 @@
 var Q = require('q');
 var _ = require('underscore');
 var mongoose = require('mongoose');
+var wordsSchema  = require('./WordsSchema');
 
 var Words = function (database) {
-    var wordsSchema = mongoose.Schema({
-        username: 'string',
-        lessonId: 'string',
-        word: 'string',
-        translation: 'string'
-    });
     this.collection = database.model('Words', wordsSchema);
 };
 
@@ -27,6 +22,8 @@ Words.prototype = {
     },
 
     update: function (id, wordsData) {
+
+        //TODO [DoMi] It won't work! Replace _.omit with _.each
         wordsData = _.omit(wordsData, function (value) {
             return _.isUndefined(value);
         });
@@ -35,7 +32,7 @@ Words.prototype = {
     },
 
     remove: function (id) {
-        return Q.denodeify(this.collection.remove.bind(this.collection))({_id: id});
+        return Q.denodeify(this.collection.findByIdAndRemove.bind(this.collection))(id);
     },
 
     find: function (filtering) {
@@ -43,9 +40,16 @@ Words.prototype = {
     },
 
     _validateIfAllFieldsAreSet: function (wordsData) {
-        return _.all(_.values(wordsData), function (value) {
-            return !_.isNull(value) && !_.isUndefined(value);
+        var requiredAttrs = _.without(_.keys(wordsSchema.paths), '__v', '_id');
+        var isValid = true;
+
+        _.each(requiredAttrs, function(key){
+            if(_.isNull(wordsData[key]) || _.isUndefined(wordsData[key])){
+                isValid = false;
+            }
         });
+
+        return isValid;
     }
 };
 
