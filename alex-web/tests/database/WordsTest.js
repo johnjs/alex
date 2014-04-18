@@ -104,20 +104,33 @@ describe('Words collection', function () {
                 done();
             });
         });
-
-        it('should return an error if any of word attributes is not set', function (done) {
+        it('should return an error when some attributes are not set', function (done) {
             //given
-            var wordToSave = {
-                username: 'user1',
-                lessonId: 'lesson1',
-                translation: 'obiad'
+            var toSave = {
+                username: 'user',
+                lessonId: 'lesson',
+                word: 'w'
             };
 
             //when
-            cut.save(wordToSave).then(function (attr) {
-            }, function () {
+            cut.save(toSave).then(function () {
+            }, function (err) {
+                done();
+            });
+        });
 
-                //then
+        it('should return an error when some attributes have null values', function (done) {
+            //given
+            var toSave = {
+                username: 'user',
+                lessonId: 'lesson',
+                word: 'w',
+                translation: null
+            };
+
+            //when
+            cut.save(toSave).then(function () {
+            }, function (err) {
                 done();
             });
         });
@@ -128,17 +141,51 @@ describe('Words collection', function () {
         it('should update existing word', function (done) {
             //given
             var word = {
-                word: 'hello',
-                translation: 'witaj'
+                translation: 'czesc'
             };
 
             //when
             cut.update(DATABASE_WORD._id, word).then(function (raw) {
                 var numberOfAffected = raw[0];
+
                 expect(numberOfAffected).to.equal(1);
+
+                cut.find({_id: DATABASE_WORD._id}).then(function (words) {
+                    expect(words).to.have.length(1);
+                    expect(words[0].translation).to.equal(word.translation);
+                });
+
                 done();
             });
 
+        });
+
+        it('should not update existing word with undefined attribute', function (done) {
+            //given
+            var word = {
+                translation: undefined
+            };
+
+            //when
+            cut.update(DATABASE_WORD._id, word).then(function (raw) {
+            }, function (err) {
+                expect(err.name).to.equal('CastError');
+                done();
+            });
+        });
+
+        it('should not allow to update an _id of existing word', function (done) {
+            //given
+            var word = {
+                _id: '1234'
+            };
+
+            //when
+            cut.update(DATABASE_WORD._id, word).then(function (raw) {
+            }, function (err) {
+                expect(err.name).to.equal('CastError');
+                done();
+            });
         });
     });
 
@@ -146,7 +193,7 @@ describe('Words collection', function () {
         it('should remove existing word', function (done) {
             //given
 
-            //when - find existing word
+            //when
             cut.remove(DATABASE_WORD._id).then(function () {
                 cut.find({_id: DATABASE_WORD._id}).then(function (words) {
 

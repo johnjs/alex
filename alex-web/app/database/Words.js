@@ -22,12 +22,6 @@ Words.prototype = {
     },
 
     update: function (id, wordsData) {
-
-        //TODO [DoMi] It won't work! Replace _.omit with _.each
-        wordsData = _.omit(wordsData, function (value) {
-            return _.isUndefined(value);
-        });
-
         return Q.denodeify(this.collection.update.bind(this.collection))(id, wordsData);
     },
 

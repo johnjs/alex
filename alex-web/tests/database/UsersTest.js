@@ -48,8 +48,6 @@ describe('Users collection', function () {
                         expect(doesMatch).to.equal(true);
                         done();
                     });
-
-
                 });
             });
         });
@@ -98,13 +96,8 @@ describe('Users collection', function () {
             };
 
             //when
-            cut.update(SAMPLE_USER._id, userData).then(function (users) {
-                var updatedUser = _.first(users);
-
-                //then
-                expect(updatedUser.username).to.equal(SAMPLE_USER.username);
-                expect(updatedUser.password).to.equal(SAMPLE_USER.password);
-
+            cut.update(SAMPLE_USER._id, userData).then(function (data) {
+            }, function(err){
                 done();
             });
         });
@@ -116,13 +109,8 @@ describe('Users collection', function () {
             };
 
             //when
-            cut.update(SAMPLE_USER._id, userData).then(function (users) {
-                var updatedUser = _.first(users);
-
-                //then
-                expect(updatedUser.username).to.equal(SAMPLE_USER.username);
-                expect(updatedUser.password).to.equal(SAMPLE_USER.password);
-
+            cut.update(SAMPLE_USER._id, userData).then(function () {
+            }, function(err){
                 done();
             });
         });

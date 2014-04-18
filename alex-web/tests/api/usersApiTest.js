@@ -58,11 +58,6 @@ describe('Users API test', function () {
         });
     });
 
-    describe('Create', function(){
-
-    });
-
-
     afterEach(function (done) {
         app.database._connection.collections['users'].drop(done);
     });

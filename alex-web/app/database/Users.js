@@ -10,22 +10,26 @@ Users.prototype = {
     collection: null,
 
     save: function (usersData) {
+        if (!this._validateIfAllFieldsAreSet(usersData)) {
+            var errorPromise = Q.defer();
+            errorPromise.reject("All fields of a model must be set");
+            return errorPromise.promise;
+        }
+
         var newUser = new this.collection(usersData);
         return Q.denodeify(newUser.save.bind(newUser))();
     },
 
     update: function (id, usersData) {
 
-        //TODO [DoMi] check why _.omit does not work
-        var dataToUpdate = {};
-        _.each(usersData, function (value, key) {
-            if (value && key !== '_id') {
-                dataToUpdate[key] = value;
-            }
-        });
+        if (!this._validateIfAnyAttributeIsNotSet(usersData)) {
+            var errorPromise = Q.defer();
+            errorPromise.reject("All fields of a model must be set");
+            return errorPromise.promise;
+        }
 
         return this.findOne({_id: id}).then(function (user) {
-            user = _.extend(user, dataToUpdate);
+            user = _.extend(user, usersData);
             return Q.denodeify(user.save.bind(user))();
         });
     },
@@ -36,7 +40,30 @@ Users.prototype = {
 
     findOne: function (usersData) {
         return Q.denodeify(this.collection.findOne.bind(this.collection))(usersData);
+    },
+
+    _validateIfAllFieldsAreSet: function (usersData) {
+        var requiredAttrs = _.without(_.keys(UsersSchema.paths), '__v', '_id');
+        return this._validateIfGivenAttributesAreSet(usersData, requiredAttrs);
+    },
+
+    _validateIfAnyAttributeIsNotSet:function(userData){
+        return this._validateIfGivenAttributesAreSet(userData, _.keys(userData));
+    },
+
+    _validateIfGivenAttributesAreSet: function (obj, attrs) {
+        var isValid = true;
+
+        _.each(attrs, function (key) {
+            if (_.isNull(obj[key]) || _.isUndefined(obj[key])) {
+                isValid = false;
+            }
+        });
+
+        return isValid;
     }
+
+
 };
 
 module.exports = Users;
