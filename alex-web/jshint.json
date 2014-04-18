@@ -24,7 +24,8 @@
             "require": true,
             "before": true,
             "after": true,
-            "afterEach":true
+            "afterEach":true,
+            "expect":true
         }
     },
     "backend": {

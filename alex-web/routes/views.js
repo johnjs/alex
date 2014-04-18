@@ -12,6 +12,11 @@ module.exports = function () {
         logout: function (req, res) {
             req.logout();
             res.redirect('/');
+        },
+
+        view: function (req, res) {
+            var view = req.params.view;
+            res.render('../views/partials/' + view);
         }
 
     };

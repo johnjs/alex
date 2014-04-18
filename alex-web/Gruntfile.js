@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         jshint: grunt.file.readJSON('jshint.json'),
         lint: {
-            backend: ['./*.js', 'routes/*.js', 'app/**/*.js', 'tests/**/*.js'],
+            backend: ['./*.js', 'routes/*.js', 'app/**/*.js', 'tests/**/*.js', '!tests/public/test-main.js'],
             frontend:[]
         },
         watch: {
@@ -48,7 +48,13 @@ module.exports = function (grunt) {
                 options: {
                     reporter: 'spec'
                 },
-                src: ['tests/**/*.js']
+                src: ['tests/**/*.js', '!tests/public/**/*.js']
+            }
+        },
+
+        karma: {
+            unit: {
+                configFile: 'tests/public/karma.conf.js'
             }
         }
 
@@ -56,8 +62,10 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-karma');
 
     // Default task(s).
-    grunt.registerTask('default', ['mochaTest', 'jshint']);
+    grunt.registerTask('default', ['mochaTest', 'jshint', 'karma']);
+    grunt.registerTask('client', ['karma']);
 
 };

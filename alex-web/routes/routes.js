@@ -14,6 +14,7 @@ module.exports = function(app, users, words, passport){
 
     app.get('/', isLoggedIn, views.index);
     app.get('/login', views.login);
+    app.get('/views/partials/:view', views.view);
 
     app.post('/login', usersRouting.login);
     app.get('/logout', usersRouting.logout);

@@ -3,5 +3,10 @@ html
   head
   title Alex
   body
-  div(class="container")
-     h1 Hello!
+      div(class="container")
+         h1 Hello!
+        div(ng-view)
+
+
+
+      script(src='libs/requirejs/require.js', data-main="/javascripts/main")
