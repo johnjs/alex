@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var _ = require('underscore');
 
-var Users = require('../../app/database/Users');
+var Users = require('../../../app/database/Users');
 var database = require('../utils/TestDatabase');
 
 

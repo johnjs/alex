@@ -1,6 +1,6 @@
 var Application = require('./app/Application');
 var logger = require('./app/utils/Logger');
-var database = require('./tests/utils/TestDatabase');
+var database = require('./tests/backend/utils/TestDatabase');
 
 logger.setTestingMode();
 

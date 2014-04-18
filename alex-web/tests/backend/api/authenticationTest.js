@@ -1,4 +1,4 @@
-var app = require('./../../app_test');
+var app = require('./../../../app_test');
 var requestUtils = require('./../utils/request');
 var expect = require('chai').expect;
 

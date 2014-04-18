@@ -2,7 +2,7 @@ var Q = require('q');
 var expect = require('chai').expect;
 var _ = require('underscore');
 
-var Words = require('../../app/database/Words');
+var Words = require('../../../app/database/Words');
 var database = require('../utils/TestDatabase');
 
 describe('Words collection', function () {

@@ -1,4 +1,4 @@
-var Database = require('../../app/database/Database');
+var Database = require('../../../app/database/Database');
 
 var db = new Database('localhost', 'alex-test');
 
