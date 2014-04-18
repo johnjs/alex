@@ -5,4 +5,5 @@ services:
    - mongodb
 before_install:
    - cd alex-web/
+   - npm install -g bower
    - npm install -g grunt-cli

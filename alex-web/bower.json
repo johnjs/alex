@@ -1,0 +1,23 @@
+{
+  "name": "alex-web",
+  "version": "0.1",
+  "homepage": "https://github.com/johnjs/alex",
+  "authors": [
+    "Dominik Michalski <d.m.michalski@gmail.com>"
+  ],
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "angular": "~1.2.16"
+  }
+}
