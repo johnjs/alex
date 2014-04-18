@@ -1,13 +1,23 @@
 doctype html
 html
   head
-  title Alex
+    link(href="libs/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+
   body
-  div(class="container")
-     div(class="col-sm-6 col-sm-offset-3")
-        h1
-           span(class="fa fa-sign-in") Login
-        div(class="alert alert-danger") #{message}
+    div(class="container")
+      div(id="carousel-example-generic", class="carousel slide col-sm-4 col-sm-offset-4", data-ride="carousel")
+        ol(class="carousel-indicators")
+          li(data-target="#carousel-example-generic", data-slide-to="0", class="active")
+        div(class="carousel-inner")
+          div(class="item active")
+            img(src="images/words.jpg")
+        a(class="left carousel-control", href="#carousel-example-generic", data-slide="prev")
+          span(class="glyphicon glyphicon-chevron-left")
+        a(class="right carousel-control", href="#carousel-example-generic", data-slide="next")
+          span(class="glyphicon glyphicon-chevron-right")
+     div(class="col-sm-4 col-sm-offset-4")
+        if message.length > 0
+           div(class="alert alert-danger") #{message}
         form(action="/login" method="post")
            div(class="form-group")
               label Login
@@ -15,4 +25,8 @@ html
            div(class="form-group")
               label Password
               input(type="password", class="form-control", name="password")
-           button(type="submit" class="btn btn-warning btn-lg") Login
+           button(type="submit" class="btn btn-primary btn-lg") Login
+
+  script(src="libs/jquery/dist/jquery.min.js", type="text/javascript")
+  script(src="libs/bootstrap/dist/js/bootstrap.min.js", type="text/javascript")
+
