@@ -52,6 +52,15 @@ module.exports = function (Words) {
             }, function (err) {
                 Response.badRequest(err, res);
             });
+        },
+
+        findLessons: function(req, res){
+            var username = req.session.passport.user;
+            Words.findLessons(username).then(function (lessons) {
+                Response.okJson(lessons, res);
+            }, function (err) {
+                Response.badRequest(err, res);
+            });
         }
     };
 };

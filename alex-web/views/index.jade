@@ -1,12 +1,5 @@
-doctype html
-html
-  head
-  title Alex
-  body
-      div(class="container")
-         h1 Hello!
+extends layout
+
+block content
+    div(class="container")
         div(ng-view)
-
-
-
-      script(src='libs/requirejs/require.js', data-main="/javascripts/main")

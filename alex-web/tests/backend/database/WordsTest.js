@@ -206,6 +206,19 @@ describe('Words collection', function () {
         });
     });
 
+    describe('Lessons', function () {
+        it('should return lessons of a given user', function (done) {
+            //when
+            cut.findLessons(SAMPLE_WORD_3.username).then(function (lessons) {
+
+                //then
+                expect(lessons).to.deep.equal([SAMPLE_WORD_3.lessonId]);
+                done();
+            });
+
+        });
+    });
+
     afterEach(function (done) {
         database._connection.collections['words'].drop(function (err) {
             done();

@@ -19,10 +19,12 @@ module.exports = function(app, users, words, passport){
     app.post('/login', usersRouting.login);
     app.get('/logout', usersRouting.logout);
     app.post('/users', usersRouting.findUsers);
+    app.put('/users', usersRouting.save);
 
     app.put('/words', wordsRouting.createWord);
     app.post('/words', wordsRouting.findWords);
     app.post('/words/:id', wordsRouting.updateWord);
     app.del('/words/:id', wordsRouting.removeWord);
+    app.post('/lessons', wordsRouting.findLessons);
 
 };

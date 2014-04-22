@@ -30,7 +30,7 @@ module.exports = function (Users, passport) {
                         done(null, false, req.flash('loginMessage', 'Oops! Wrong password.'));
                     }
                 }, function (err) {
-                    done(err);
+                    done(null, false, req.flash('loginMessage', 'Oops! Wrong password.'));
                 });
             }, function (err) {
                 done(err);

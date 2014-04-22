@@ -1,7 +1,7 @@
 var Q = require('q');
 var _ = require('underscore');
 var mongoose = require('mongoose');
-var wordsSchema  = require('./WordsSchema');
+var wordsSchema = require('./WordsSchema');
 
 var Words = function (database) {
     this.collection = database.model('Words', wordsSchema);
@@ -33,12 +33,17 @@ Words.prototype = {
         return Q.denodeify(this.collection.find.bind(this.collection))(filtering);
     },
 
+
+    findLessons: function (username) {
+        return Q.denodeify(this.collection.distinct.bind(this.collection))('lessonId', {username: username});
+    },
+
     _validateIfAllFieldsAreSet: function (wordsData) {
         var requiredAttrs = _.without(_.keys(wordsSchema.paths), '__v', '_id');
         var isValid = true;
 
-        _.each(requiredAttrs, function(key){
-            if(_.isNull(wordsData[key]) || _.isUndefined(wordsData[key])){
+        _.each(requiredAttrs, function (key) {
+            if (_.isNull(wordsData[key]) || _.isUndefined(wordsData[key])) {
                 isValid = false;
             }
         });
