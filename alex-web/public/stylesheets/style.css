@@ -6,3 +6,26 @@ body {
 a {
   color: #00B7FF;
 }
+
+.lesson-selector {
+    height: 2em;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
+
+.word.ng-enter,
+.word.ng-leave {
+    -webkit-transition:0.5s linear all;
+    transition:0.5s linear all;
+}
+
+.word.ng-enter,
+.word.ng-leave.ng-leave-active {
+    opacity:0;
+}
+.word.ng-leave,
+.word.ng-enter.ng-enter-active {
+    opacity:1;
+}

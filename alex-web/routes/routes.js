@@ -1,9 +1,9 @@
 var views = require('./views')();
 
-module.exports = function(app, users, words, passport){
+module.exports = function (app, users, words, passport) {
 
     function isLoggedIn(req, res, next) {
-        if (req.isAuthenticated()){
+        if (req.isAuthenticated()) {
             return next();
         }
         res.redirect('/login');
@@ -18,13 +18,12 @@ module.exports = function(app, users, words, passport){
 
     app.post('/login', usersRouting.login);
     app.get('/logout', usersRouting.logout);
-    app.post('/users', usersRouting.findUsers);
     app.put('/users', usersRouting.save);
 
-    app.put('/words', wordsRouting.createWord);
-    app.post('/words', wordsRouting.findWords);
-    app.post('/words/:id', wordsRouting.updateWord);
-    app.del('/words/:id', wordsRouting.removeWord);
-    app.post('/lessons', wordsRouting.findLessons);
+    app.put('/words', isLoggedIn, wordsRouting.createWord);
+    app.post('/words', isLoggedIn, wordsRouting.findWords);
+    app.post('/words/:id', isLoggedIn, wordsRouting.updateWord);
+    app.del('/words/:id', isLoggedIn, wordsRouting.removeWord);
+    app.post('/lessons', isLoggedIn, wordsRouting.findLessons);
 
 };

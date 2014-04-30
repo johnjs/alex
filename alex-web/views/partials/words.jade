@@ -1,0 +1,12 @@
+div
+    h2 Words
+    table(class="table")
+        thead
+            tr
+                th item
+                th translation
+                th
+        tbody(class="table")
+            tr(ng-repeat="w in words", word="w", remove="remove(word)")
+    hr
+    wordcreator(add="add(word, translation)")

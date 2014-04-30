@@ -37,25 +37,7 @@ describe('Users API test', function () {
     });
 
     describe('Find', function () {
-        it('should return all users', function (done) {
-            //when
-            request.post({}, '/users', 200, function (err, res) {
-
-                //then
-                expect(res.body).to.have.length(2);
-                done();
-            });
-        });
-
-        it('should return user with username "test1"', function (done) {
-            //when
-            request.post({username: 'test1'}, '/users', 200, function (err, res) {
-
-                //then
-                expect(res.body[0].username).to.be.equal(SAMPLE_USER_1.username);
-                done();
-            });
-        });
+        //TODO[DoMi] add tests when admin panel will be implemented
     });
 
     afterEach(function (done) {

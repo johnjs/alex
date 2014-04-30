@@ -116,6 +116,14 @@ describe('Users collection', function () {
         });
     });
 
+    describe('Remove', function(){
+        it('should remove an existing user', function(done){
+            cut.remove(SAMPLE_USER.username).then(function(){
+                done();
+            });
+        });
+    });
+
     describe('Compare passwords', function () {
         it('password should match for a given user', function (done) {
 

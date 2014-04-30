@@ -1,5 +1,6 @@
 var app = require('../../../app_test');
 var requestUtils = require('../utils/request');
+var testUserUtils = require('../utils/testUser');
 var expect = require('chai').expect;
 var Q = require('q');
 
@@ -7,14 +8,14 @@ describe('Words API test', function () {
 
     //given
     var SAMPLE_WORD_1 = {
-        username: 'user1',
+        username: testUserUtils.credentials.username,
         lessonId: 'lesson1',
         word: 'hello',
         translation: 'witaj'
     };
 
     var SAMPLE_WORD_2 = {
-        username: 'user1',
+        username: testUserUtils.credentials.username,
         lessonId: 'lesson2',
         word: 'see you',
         translation: 'do zobaczenia'
@@ -27,6 +28,7 @@ describe('Words API test', function () {
         translation: 'blad'
     };
 
+
     var _prepareDatabase = function () {
         return Q.all([
                 app.words.save(SAMPLE_WORD_1),
@@ -36,11 +38,21 @@ describe('Words API test', function () {
     };
 
     var request;
+    var user;
+
+
+    before(function (done) {
+        request = requestUtils(app.app);
+        user = testUserUtils.user(app.users, request);
+
+        app.start().on('listening', function () {
+            user.createAndLogin(done);
+        });
+    });
 
     beforeEach(function (done) {
         _prepareDatabase().then(function () {
-            app.start().on('listening', done);
-            request = requestUtils(app.app);
+            done();
         });
     });
 
@@ -55,9 +67,9 @@ describe('Words API test', function () {
             });
         });
 
-        it('should return words of user "user1"', function (done) {
+        it('should return words of user "testuser"', function (done) {
             //when
-            request.post({username: 'user1'}, '/words', 200, function (err, res) {
+            request.post({username: testUserUtils.credentials.username}, '/words', 200, function (err, res) {
 
                 //then
                 expect(res.body).to.have.length(2);
@@ -65,9 +77,9 @@ describe('Words API test', function () {
             });
         });
 
-        it('should return words of user "user1" from lesson "lesson1"', function (done) {
+        it('should return words of user "testuser" from lesson "lesson1"', function (done) {
             //when
-            request.post({username: 'user1', lessonId: 'lesson1'}, '/words', 200, function (err, res) {
+            request.post({username: testUserUtils.credentials.username, lessonId: 'lesson1'}, '/words', 200, function (err, res) {
 
                 //then
                 expect(res.body).to.have.length(1);
@@ -80,7 +92,7 @@ describe('Words API test', function () {
         it('should create a new word', function (done) {
             //given
             var word = {
-                username: 'user1',
+                username: testUserUtils.credentials.username,
                 lessonId: 'lesson1',
                 word: 'dinner',
                 translation: 'obiad'
@@ -93,7 +105,7 @@ describe('Words API test', function () {
         it('should return an error if any of word attributes is not set', function (done) {
             //given
             var word = {
-                username: 'user1',
+                username: testUserUtils.credentials.username,
                 lessonId: 'lesson1',
                 translation: 'obiad'
             };
@@ -113,15 +125,15 @@ describe('Words API test', function () {
             };
 
             //when - find existing word
-            app.words.find({username: 'user1', lessonId: 'lesson1'}).then(function(wordsBeforeUpdate){
+            app.words.find({username: testUserUtils.credentials.username, lessonId: 'lesson1'}).then(function (wordsBeforeUpdate) {
                 var oldWord = wordsBeforeUpdate[0];
 
 
                 //then - update its attributes
-                request.post(word, '/words/'+oldWord._id, 200, function(){
+                request.post(word, '/words/' + oldWord._id, 200, function () {
 
                     //then - find that word again
-                    app.words.find({_id:oldWord._id}).then(function(wordsAfterUpdate){
+                    app.words.find({_id: oldWord._id}).then(function (wordsAfterUpdate) {
                         var actualWord = wordsAfterUpdate[0];
 
                         //then - check if a value of a given attribute has changed
@@ -142,14 +154,14 @@ describe('Words API test', function () {
             //given
 
             //when - find existing word
-            app.words.find(SAMPLE_WORD_3).then(function(wordsBeforeRemoval){
+            app.words.find(SAMPLE_WORD_3).then(function (wordsBeforeRemoval) {
                 var wordToBeRemoved = wordsBeforeRemoval[0];
 
                 //then - remove it
-                request.delete('/words/'+wordToBeRemoved._id, 200, function(){
+                request.delete('/words/' + wordToBeRemoved._id, 200, function () {
 
                     //then - find that word again
-                    app.words.find({_id:wordToBeRemoved._id}).then(function(wordsAfterRemoval){
+                    app.words.find({_id: wordToBeRemoved._id}).then(function (wordsAfterRemoval) {
 
                         //then - check if the word has been removed
                         expect(wordsAfterRemoval).to.have.length(0);
@@ -165,8 +177,15 @@ describe('Words API test', function () {
 
     afterEach(function (done) {
         app.database._connection.collections['words'].drop(function (err) {
+            done();
+        });
+    });
+
+    after(function (done) {
+        user.logoutAndDelete(function () {
             app.shutdown(done);
         });
+
     });
 
 });

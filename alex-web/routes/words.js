@@ -5,7 +5,7 @@ module.exports = function (Words) {
 
     var _extractWordsDataFromRequest = function (req) {
         return {
-            username: req.body.username,
+            username: req.session.passport.user,
             lessonId: req.body.lessonId,
             word: req.body.word,
             translation: req.body.translation
@@ -26,8 +26,8 @@ module.exports = function (Words) {
         createWord: function (req, res) {
             var wordsData = _extractWordsDataFromRequest(req);
 
-            Words.save(wordsData).then(function () {
-                Response.ok("Word added!", res);
+            Words.save(wordsData).then(function (data) {
+                Response.okJson(data, res);
             }, function (err) {
                 Response.badRequest(err, res);
             });

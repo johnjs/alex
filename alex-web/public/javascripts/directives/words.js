@@ -1,18 +1,42 @@
-define([], function(){
-   return function(Lessons){
+define(['_'], function (_) {
+    return function (Lessons, Words) {
         return {
-            restrict:"E",
-            scope:{
-              lesson:'='
+            restrict: "E",
+            scope: {
+                lesson: '='
             },
-            template:'<div><word word="w" ng-repeat="w in words"></div>',
-            link:function(scope, element, attr){
-                scope.$watch('lesson', function(){
-                    Lessons.findWords(scope.lesson).then(function(res){
-                        scope.words = res.data;
+            templateUrl: "views/partials/words",
+            link: function (scope, element, attr) {
+                scope.remove = function (word) {
+                    Words.remove(word).then(function () {
+                        scope.words.splice(scope.words.indexOf(word), 1);
                     });
+                };
+
+                scope.add = function (word, translation) {
+                    var word = {
+                        lessonId: scope.lesson,
+                        word: word,
+                        translation: translation
+                    };
+
+                    Words.add(word).then(function (res) {
+                        scope.words.push(res.data[0]);
+                    });
+                };
+
+                scope.refreshWords = function () {
+                    if (!_.isNull(scope.lesson) && !_.isUndefined(scope.lesson)) {
+                        Lessons.findWords(scope.lesson).then(function (res) {
+                            scope.words = res.data;
+                        });
+                    }
+                };
+
+                scope.$watch('lesson', function () {
+                    scope.refreshWords();
                 });
             }
         };
-   };
+    };
 });

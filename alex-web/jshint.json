@@ -25,7 +25,10 @@
             "before": true,
             "after": true,
             "afterEach":true,
-            "expect":true
+            "expect":true,
+            "inject":true,
+            "spyOn":true,
+            "document":true
         }
     },
     "backend": {

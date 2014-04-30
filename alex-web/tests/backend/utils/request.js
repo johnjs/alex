@@ -1,4 +1,4 @@
-var supertest = require('supertest');
+var supertest = require('supertest').agent;
 
 
 module.exports = function (app) {

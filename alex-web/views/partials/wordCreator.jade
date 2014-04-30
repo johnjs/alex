@@ -1,0 +1,9 @@
+form(role="form", ng-submit="add({word:word, translation:translation})")
+    div(class="form-group")
+        label(for="word") word
+        textarea(class="form-control", ng-model="word", id="word", placeholder="your word", ng-required='true')
+    div(class="form-group")
+        label(for="translation") translation
+        textarea(class="form-control", ng-model="translation", id="translation", placeholder="your translation", ng-required='true')
+    button(type="submit" class="btn btn-default")
+        span(class="glyphicon glyphicon-plus")

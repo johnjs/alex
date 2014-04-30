@@ -1,5 +1,5 @@
 define([], function(){
-  return function(Lessons){
-    console.log('Run, Ctrl!')
+  return function($scope){
+      $scope.lesson = null;
   }
 });

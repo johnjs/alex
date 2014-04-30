@@ -1,18 +1,16 @@
-define([], function(){
-    return function(){
+define([], function () {
+    return function () {
         return {
-            restrict: "E",
-            scope:{
-                word:"="
+            restrict: "A",
+            scope: {
+                word: "=",
+                remove: "&"
             },
-            template: '<div class="jumbotron container">' +
-                '<div class="word col-md-4">{{ word.word }}</div>' +
-                '<div class="translation col-md-4">{{ word.translation }}</div>' +
-                '<div><i class="glyphicon glyphicon-remove"/></div>'+
-                '</div>',
-            link:function(scope, element, attr){
-                console.log('word!');
-            }
+            replace: true,
+            template: '<tr class="word"><td class="col-md-4">{{ word.word }}</td>' +
+                '<td class="translation col-md-4">{{ word.translation }}</td>' +
+                '<td><span ng-click="remove({word:word})" class="glyphicon glyphicon-remove pointer"/></td></tr>'
+
         }
     }
 })
