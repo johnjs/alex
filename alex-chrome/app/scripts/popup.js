@@ -4,19 +4,21 @@ app.factory('Lessons', function ($http) {
     return {
         findLessons: function () {
             return $http({
+                url: '/lessons',
                 data: {},
                 method: 'POST'
             });
         },
         findWords: function (lessonId) {
             return $http({
+                url: '/words',
                 data: {
                     lessonId: lessonId
                 },
                 method: 'POST'
             });
         }
-    }
+    };
 });
 
 app.directive('lessons', function (Lessons) {
@@ -33,7 +35,7 @@ app.directive('lessons', function (Lessons) {
             });
         }
     };
-})
+});
 
 app.controller('MainCtrl', function ($scope, Lessons) {
     $scope.lesson = '';
@@ -56,4 +58,4 @@ app.config(['$routeProvider', function ($routeProvider) {
         otherwise({
             redirectTo: '/'
         });
-}])
+}]);

@@ -95,29 +95,26 @@ module.exports = function (grunt) {
             chrome: {
             },
             dist: {
-                files: [{
-                    dot: true,
-                    src: [
-                        '<%= config.dist %>/*',
-                        '!<%= config.dist %>/.git*'
-                    ]
-                }]
+                files: [
+                    {
+                        dot: true,
+                        src: [
+                            '<%= config.dist %>/*',
+                            '!<%= config.dist %>/.git*'
+                        ]
+                    }
+                ]
             }
         },
 
         // Make sure code styles are up to par and there are no obvious mistakes
-        jshint: {
-            options: {
-                jshintrc: '.jshintrc',
-                reporter: require('jshint-stylish')
-            },
-            all: [
-                'Gruntfile.js',
-                '<%= config.app %>/scripts/{,*/}*.js',
-                '!<%= config.app %>/scripts/vendor/*',
-                'test/spec/{,*/}*.js'
-            ]
+        jshint: grunt.file.readJSON('../build/jshint.json'),
+        lint: {
+            frontend: ['<%= config.app %>/scripts/{,*/}*.js',
+                'test/spec/{,*/}*.js'],
+            backend: []
         },
+
         mocha: {
             all: {
                 options: {
@@ -160,23 +157,27 @@ module.exports = function (grunt) {
         // The following *-min tasks produce minifies files in the dist folder
         imagemin: {
             dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/images',
-                    src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= config.dist %>/images'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.app %>/images',
+                        src: '{,*/}*.{gif,jpeg,jpg,png}',
+                        dest: '<%= config.dist %>/images'
+                    }
+                ]
             }
         },
 
         svgmin: {
             dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/images',
-                    src: '{,*/}*.svg',
-                    dest: '<%= config.dist %>/images'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.app %>/images',
+                        src: '{,*/}*.svg',
+                        dest: '<%= config.dist %>/images'
+                    }
+                ]
             }
         },
 
@@ -192,57 +193,35 @@ module.exports = function (grunt) {
                     // removeEmptyAttributes: true,
                     // removeOptionalTags: true
                 },
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>',
-                    src: '*.html',
-                    dest: '<%= config.dist %>'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.app %>',
+                        src: '*.html',
+                        dest: '<%= config.dist %>'
+                    }
+                ]
             }
         },
 
-        // By default, your `index.html`'s <!-- Usemin block --> will take care of
-        // minification. These next options are pre-configured if you do not wish
-        // to use the Usemin blocks.
-        // cssmin: {
-        //     dist: {
-        //         files: {
-        //             '<%= config.dist %>/styles/main.css': [
-        //                 '<%= config.app %>/styles/{,*/}*.css'
-        //             ]
-        //         }
-        //     }
-        // },
-        // uglify: {
-        //     dist: {
-        //         files: {
-        //             '<%= config.dist %>/scripts/scripts.js': [
-        //                 '<%= config.dist %>/scripts/scripts.js'
-        //             ]
-        //         }
-        //     }
-        // },
-        // concat: {
-        //     dist: {}
-        // },
-
-        // Copies remaining files to places other tasks can use
         copy: {
             dist: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= config.app %>',
-                    dest: '<%= config.dist %>',
-                    src: [
-                        '*.{ico,png,txt}',
-                        'images/{,*/}*.{webp,gif}',
-                        '{,*/}*.html',
-                        'styles/{,*/}*.css',
-                        'styles/fonts/{,*/}*.*',
-                        '_locales/{,*/}*.json',
-                    ]
-                }]
+                files: [
+                    {
+                        expand: true,
+                        dot: true,
+                        cwd: '<%= config.app %>',
+                        dest: '<%= config.dist %>',
+                        src: [
+                            '*.{ico,png,txt}',
+                            'images/{,*/}*.{webp,gif}',
+                            '{,*/}*.html',
+                            'styles/{,*/}*.css',
+                            'styles/fonts/{,*/}*.*',
+                            '_locales/{,*/}*.json',
+                        ]
+                    }
+                ]
             }
         },
 
@@ -281,12 +260,14 @@ module.exports = function (grunt) {
                 options: {
                     archive: 'package/alex-chrome<%= config.manifest.version %>.zip'
                 },
-                files: [{
-                    expand: true,
-                    cwd: 'dist/',
-                    src: ['**'],
-                    dest: ''
-                }]
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'dist/',
+                        src: ['**'],
+                        dest: ''
+                    }
+                ]
             }
         }
     });

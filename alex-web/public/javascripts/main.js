@@ -23,10 +23,7 @@ require.config({
 });
 
 require(['angular', 'routes/routes'], function (angular) {
-    console.log("App started");
-
     angular.element().ready(function() {
         angular.bootstrap(document, ['alexApp']);
     });
-
 });

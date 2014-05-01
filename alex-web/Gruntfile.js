@@ -3,7 +3,7 @@ module.exports = function (grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        jshint: grunt.file.readJSON('jshint.json'),
+        jshint: grunt.file.readJSON('../build/jshint.json'),
         lint: {
             backend: ['./*.js', 'routes/*.js', 'app/**/*.js', 'tests/**/*.js', '!tests/public/test-main.js'],
             frontend:[]

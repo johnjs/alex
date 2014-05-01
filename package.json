@@ -3,6 +3,7 @@
     "description": "alex",
     "version":"0.1",
     "scripts": {
-        "alex-web": "cd alex-web && grunt"
+        "alex-web": "cd alex-web && grunt",
+        "alex-chrome": "cd alex-chrome && grunt"
     }
 }

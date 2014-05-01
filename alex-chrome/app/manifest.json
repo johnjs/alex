@@ -1,8 +1,8 @@
 {
-    "name": "__MSG_appName__",
-    "version": "0.0.2",
+    "name": "Alex",
+    "version": "0.0.4",
     "manifest_version": 2,
-    "description": "__MSG_appDescription__",
+    "description": "Alex",
     "icons": {
         "16": "images/icon-16.png",
         "128": "images/icon-128.png"
@@ -28,8 +28,7 @@
     "content_scripts": [
         {
             "matches": [
-                "http://*/*",
-                "https://*/*"
+                "http://stackoverflow.com/*"
             ],
             "css": [
                 "bower_components/angular/angular-csp.css",
@@ -38,7 +37,7 @@
             ],
             "js": [
                 "bower_components/jquery/dist/jquery.min.js",
-                "bower_components/angular/angular.min.js",
+                "bower_components/angular/angular.js",
                 "bower_components/underscore/underscore.js",
                 "scripts/contentscript.js"
             ],
