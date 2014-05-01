@@ -1,4 +1,13 @@
 /*/node_modules
 /*/public/libs
 /*/.idea
+/*/dist/**/*
 .idea
+
+alex-chrome/temp
+alex-chrome/.tmp
+alex-chrome/dist
+alex-chrome/.sass-cache
+alex-chrome/app/bower_components
+alex-chrome/test/bower_components
+alex-chrome/package

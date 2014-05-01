@@ -1,5 +1,5 @@
 define(['alexApp', 'views/partials/wordCreator.jade', 'angular', 'angular-mocks'], function () {
-    describe('Word directive', function () {
+    describe('Words creator directive', function () {
 
         var element;
         var scope;

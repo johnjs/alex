@@ -1,44 +1,49 @@
-{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-01T10:19:08.529Z"}
-{"level":"info","message":"[2014-05-01T12:19:08+02:00][127.0.0.1] GET /login","timestamp":"2014-05-01T10:19:08.558Z"}
-{"level":"info","message":"[2014-05-01T12:19:09+02:00][127.0.0.1] GET /","timestamp":"2014-05-01T10:19:09.987Z"}
-{"username":"user","password":"pass","level":"info","message":"[2014-05-01T12:19:10+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:19:10.303Z"}
-{"username":"user","password":"incorrect password","level":"info","message":"[2014-05-01T12:19:10+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:19:10.619Z"}
-{"username":"thereIsNoSuchUser","password":"pass","level":"info","message":"[2014-05-01T12:19:10+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:19:10.945Z"}
-{"username":"user","password":"pass","level":"info","message":"[2014-05-01T12:19:10+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:19:10.954Z"}
-{"level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-01T10:19:11.235Z"}
-{"level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] GET /","timestamp":"2014-05-01T10:19:11.240Z"}
-{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-01T10:19:11.252Z"}
-{"username":"testuser","password":"testpass","level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:19:11.538Z"}
-{"level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] POST /words","timestamp":"2014-05-01T10:19:11.804Z"}
-{"username":"testuser","level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] POST /words","timestamp":"2014-05-01T10:19:11.819Z"}
-{"username":"testuser","lessonId":"lesson1","level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] POST /words","timestamp":"2014-05-01T10:19:11.830Z"}
-{"username":"testuser","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-01T10:19:11.843Z"}
-{"username":"testuser","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-01T10:19:11.959Z"}
-{"level":"warn","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-05-01T10:19:11.961Z"}
-{"word":"hello","translation":"witaj","level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] POST /words/53621f9f37d73e240f407024","timestamp":"2014-05-01T10:19:11.973Z"}
-{"level":"warn","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] TypeError: Object.keys called on non-object","timestamp":"2014-05-01T10:19:11.979Z"}
-{"level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] DELETE /words/53621f9f37d73e240f407029","timestamp":"2014-05-01T10:19:11.992Z"}
-{"level":"info","message":"[2014-05-01T12:19:11+02:00][127.0.0.1] Word removed!","timestamp":"2014-05-01T10:19:11.996Z"}
-{"level":"info","message":"[2014-05-01T12:19:12+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-01T10:19:12.002Z"}
-{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-01T10:20:35.219Z"}
-{"level":"info","message":"[2014-05-01T12:20:35+02:00][127.0.0.1] GET /login","timestamp":"2014-05-01T10:20:35.245Z"}
-{"level":"info","message":"[2014-05-01T12:20:36+02:00][127.0.0.1] GET /","timestamp":"2014-05-01T10:20:36.007Z"}
-{"username":"user","password":"pass","level":"info","message":"[2014-05-01T12:20:36+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:20:36.325Z"}
-{"username":"user","password":"incorrect password","level":"info","message":"[2014-05-01T12:20:36+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:20:36.615Z"}
-{"username":"thereIsNoSuchUser","password":"pass","level":"info","message":"[2014-05-01T12:20:36+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:20:36.936Z"}
-{"username":"user","password":"pass","level":"info","message":"[2014-05-01T12:20:36+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:20:36.984Z"}
-{"level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-01T10:20:37.279Z"}
-{"level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] GET /","timestamp":"2014-05-01T10:20:37.285Z"}
-{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-01T10:20:37.296Z"}
-{"username":"testuser","password":"testpass","level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] POST /login","timestamp":"2014-05-01T10:20:37.573Z"}
-{"level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] POST /words","timestamp":"2014-05-01T10:20:37.831Z"}
-{"username":"testuser","level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] POST /words","timestamp":"2014-05-01T10:20:37.845Z"}
-{"username":"testuser","lessonId":"lesson1","level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] POST /words","timestamp":"2014-05-01T10:20:37.855Z"}
-{"username":"testuser","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-01T10:20:37.866Z"}
-{"username":"testuser","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-01T10:20:37.878Z"}
-{"level":"warn","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-05-01T10:20:37.879Z"}
-{"word":"hello","translation":"witaj","level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] POST /words/53621ff543ee30281dd087ec","timestamp":"2014-05-01T10:20:37.892Z"}
-{"level":"warn","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] TypeError: Object.keys called on non-object","timestamp":"2014-05-01T10:20:37.898Z"}
-{"level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] DELETE /words/53621ff543ee30281dd087f1","timestamp":"2014-05-01T10:20:37.913Z"}
-{"level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] Word removed!","timestamp":"2014-05-01T10:20:37.917Z"}
-{"level":"info","message":"[2014-05-01T12:20:37+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-01T10:20:37.922Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-01T10:36:14.780Z"}
+{"level":"info","message":"[2014-05-01T12:36:17+02:00][127.0.0.1] GET /","timestamp":"2014-05-01T10:36:17.857Z"}
+{"level":"info","message":"[2014-05-01T12:36:18+02:00][127.0.0.1] GET /login","timestamp":"2014-05-01T10:36:18.152Z"}
+{"level":"info","message":"[2014-05-01T12:36:18+02:00][127.0.0.1] GET /libs/bootstrap/dist/css/bootstrap.min.css","timestamp":"2014-05-01T10:36:18.627Z"}
+{"level":"info","message":"[2014-05-01T12:36:18+02:00][127.0.0.1] GET /images/words.jpg","timestamp":"2014-05-01T10:36:18.630Z"}
+{"level":"info","message":"[2014-05-01T12:36:18+02:00][127.0.0.1] GET /libs/jquery/dist/jquery.min.js","timestamp":"2014-05-01T10:36:18.632Z"}
+{"level":"info","message":"[2014-05-01T12:36:18+02:00][127.0.0.1] GET /libs/bootstrap/dist/js/bootstrap.min.js","timestamp":"2014-05-01T10:36:18.633Z"}
+{"level":"info","message":"[2014-05-01T12:36:18+02:00][127.0.0.1] GET /libs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff","timestamp":"2014-05-01T10:36:18.726Z"}
+{"level":"info","message":"[2014-05-01T12:36:21+02:00][10.144.188.154] GET /","timestamp":"2014-05-01T10:36:21.750Z"}
+{"level":"info","message":"[2014-05-01T12:36:21+02:00][10.144.188.154] GET /login","timestamp":"2014-05-01T10:36:21.757Z"}
+{"level":"info","message":"[2014-05-01T12:36:21+02:00][10.144.188.154] GET /libs/bootstrap/dist/css/bootstrap.min.css","timestamp":"2014-05-01T10:36:21.950Z"}
+{"level":"info","message":"[2014-05-01T12:36:21+02:00][10.144.188.154] GET /images/words.jpg","timestamp":"2014-05-01T10:36:21.952Z"}
+{"level":"info","message":"[2014-05-01T12:36:21+02:00][10.144.188.154] GET /libs/jquery/dist/jquery.min.js","timestamp":"2014-05-01T10:36:21.954Z"}
+{"level":"info","message":"[2014-05-01T12:36:21+02:00][10.144.188.154] GET /libs/bootstrap/dist/js/bootstrap.min.js","timestamp":"2014-05-01T10:36:21.983Z"}
+{"level":"info","message":"[2014-05-01T12:36:22+02:00][10.144.188.154] GET /libs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff","timestamp":"2014-05-01T10:36:22.044Z"}
+{"username":"test","password":"password","level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] POST /login","timestamp":"2014-05-01T10:36:26.124Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /","timestamp":"2014-05-01T10:36:26.397Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /stylesheets/style.css","timestamp":"2014-05-01T10:36:26.566Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /libs/bootstrap/dist/css/bootstrap.min.css","timestamp":"2014-05-01T10:36:26.568Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /libs/jquery/dist/jquery.min.js","timestamp":"2014-05-01T10:36:26.570Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /libs/bootstrap/dist/js/bootstrap.min.js","timestamp":"2014-05-01T10:36:26.574Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /libs/requirejs/require.js","timestamp":"2014-05-01T10:36:26.575Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/main.js","timestamp":"2014-05-01T10:36:26.717Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/routes/routes.js","timestamp":"2014-05-01T10:36:26.757Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /libs/angular/angular.min.js","timestamp":"2014-05-01T10:36:26.766Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/alexApp.js","timestamp":"2014-05-01T10:36:26.795Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/controllers/MainCtrl.js","timestamp":"2014-05-01T10:36:26.855Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/factories/Lessons.js","timestamp":"2014-05-01T10:36:26.859Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/factories/Words.js","timestamp":"2014-05-01T10:36:26.862Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/directives/lessons.js","timestamp":"2014-05-01T10:36:26.865Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/directives/words.js","timestamp":"2014-05-01T10:36:26.867Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/directives/word.js","timestamp":"2014-05-01T10:36:26.869Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/directives/lessonCreator.js","timestamp":"2014-05-01T10:36:26.876Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /javascripts/directives/wordCreator.js","timestamp":"2014-05-01T10:36:26.878Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /libs/angular-route/angular-route.min.js","timestamp":"2014-05-01T10:36:26.880Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /libs/angular-animate/angular-animate.min.js","timestamp":"2014-05-01T10:36:26.884Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /libs/underscore/underscore.js","timestamp":"2014-05-01T10:36:26.894Z"}
+{"level":"info","message":"[2014-05-01T12:36:26+02:00][10.144.188.154] GET /views/partials/main","timestamp":"2014-05-01T10:36:26.965Z"}
+{"level":"info","message":"[2014-05-01T12:36:27+02:00][10.144.188.154] GET /views/partials/lessonCreator","timestamp":"2014-05-01T10:36:27.007Z"}
+{"level":"info","message":"[2014-05-01T12:36:27+02:00][10.144.188.154] POST /lessons","timestamp":"2014-05-01T10:36:27.010Z"}
+{"level":"info","message":"[2014-05-01T12:36:27+02:00][10.144.188.154] GET /views/partials/words","timestamp":"2014-05-01T10:36:27.012Z"}
+{"level":"info","message":"[2014-05-01T12:36:27+02:00][10.144.188.154] GET /libs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff","timestamp":"2014-05-01T10:36:27.055Z"}
+{"level":"info","message":"[2014-05-01T12:36:27+02:00][10.144.188.154] GET /views/partials/wordCreator","timestamp":"2014-05-01T10:36:27.127Z"}
+{"lessonId":"test","level":"info","message":"[2014-05-01T12:36:27+02:00][10.144.188.154] POST /words","timestamp":"2014-05-01T10:36:27.130Z"}
+{"level":"info","message":"[2014-05-01T12:36:44+02:00][10.144.188.154] GET /fonts/glyphicons-halflings-regular.woff","timestamp":"2014-05-01T10:36:44.311Z"}
+{"level":"info","message":"[2014-05-01T12:36:44+02:00][10.144.188.154] GET /fonts/glyphicons-halflings-regular.ttf","timestamp":"2014-05-01T10:36:44.358Z"}
+{"level":"info","message":"[2014-05-01T12:36:44+02:00][10.144.188.154] GET /fonts/glyphicons-halflings-regular.svg","timestamp":"2014-05-01T10:36:44.384Z"}
+{"level":"info","message":"[2014-05-01T12:36:55+02:00][10.144.188.154] POST /lessons","timestamp":"2014-05-01T10:36:55.799Z"}
+{"lessonId":"test","level":"info","message":"[2014-05-01T12:36:58+02:00][10.144.188.154] POST /words","timestamp":"2014-05-01T10:36:58.812Z"}

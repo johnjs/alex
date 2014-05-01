@@ -42,8 +42,6 @@ Users.prototype = {
         return Q.denodeify(this.collection.findOne.bind(this.collection))(usersData);
     },
 
-
-    //TODO[DoMi] Add a test
     remove: function (username) {
         return Q.denodeify(this.collection.findOneAndRemove.bind(this.collection))({username: username});
     },
