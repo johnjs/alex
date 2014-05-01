@@ -1,7 +1,7 @@
 {
     "name": "alex",
     "description": "alex",
-    "version":"0.1",
+    "private":true,
     "scripts": {
         "alex-web": "cd alex-web && grunt",
         "alex-chrome": "cd alex-chrome && grunt"

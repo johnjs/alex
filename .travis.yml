@@ -8,4 +8,6 @@ before_install:
    - npm install -g grunt-cli
    - cd alex-web/ && bower install
    - cd ../alex-chrome/ && bower install && cd ..
-
+script:
+   - npm run-script alex-web
+   - npm run-script alex-chrome
