@@ -10,6 +10,11 @@ define(['alexApp', 'views/partials/wordCreator.jade', 'angular', 'angular-mocks'
         beforeEach(inject(function ($compile, $rootScope) {
             scope = $rootScope.$new();
             scope.add = function (word, translation) {
+                return {
+                    then: function (cbk) {
+                        cbk();
+                    }
+                };
             };
             spyOn(scope, 'add').andCallThrough();
 
@@ -17,15 +22,38 @@ define(['alexApp', 'views/partials/wordCreator.jade', 'angular', 'angular-mocks'
             $compile(element)(scope);
         }));
 
-        it('should invoke an add method of parent scope', function () {
-            //given
+        var ITEM_TO_BE_ADDED = {
+            word: 'word',
+            translation: 'translation'
+        };
+
+        function initScope() {
             scope.$digest();
+            element.isolateScope().word = ITEM_TO_BE_ADDED.word;
+            element.isolateScope().translation = ITEM_TO_BE_ADDED.translation;
+        }
+
+        it('should invoke an add method of parent scope and ', function () {
+            //given
+            initScope();
 
             //when
-            element.scope().add('word', 'translation');
+            element.isolateScope().formSubmitAction();
 
             //then
-            expect(scope.add).toHaveBeenCalledWith('word', 'translation');
+            expect(scope.add).toHaveBeenCalledWith(ITEM_TO_BE_ADDED.word, ITEM_TO_BE_ADDED.translation);
+        });
+
+        it('should clear form inputs after successful adding of a new word', function () {
+            //given
+            initScope();
+
+            //when
+            element.isolateScope().formSubmitAction();
+
+            //then
+            expect(element.isolateScope().word).toBe("");
+            expect(element.isolateScope().translation).toBe("");
         });
 
     });

@@ -1,4 +1,4 @@
-form(role="form", ng-submit="add({word:word, translation:translation})")
+form(role="form", ng-submit="formSubmitAction()")
     div(class="form-group")
         label(for="word") word
         textarea(class="form-control", ng-model="word", id="word", placeholder="your word", ng-required='true')

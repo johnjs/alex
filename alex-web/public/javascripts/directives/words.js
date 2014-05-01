@@ -20,7 +20,7 @@ define(['_'], function (_) {
                         translation: translation
                     };
 
-                    Words.add(word).then(function (res) {
+                    return Words.add(word).then(function (res) {
                         scope.words.push(res.data[0]);
                     });
                 };
