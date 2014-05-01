@@ -6,4 +6,5 @@ services:
 before_install:
    - cd alex-web/
    - npm install -g bower
+   - bower install
    - npm install -g grunt-cli
