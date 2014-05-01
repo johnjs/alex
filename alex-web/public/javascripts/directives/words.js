@@ -14,13 +14,13 @@ define(['_'], function (_) {
                 };
 
                 scope.add = function (word, translation) {
-                    var word = {
+                    var wordToAdd = {
                         lessonId: scope.lesson,
                         word: word,
                         translation: translation
                     };
 
-                    return Words.add(word).then(function (res) {
+                    return Words.add(wordToAdd).then(function (res) {
                         scope.words.push(res.data[0]);
                     });
                 };

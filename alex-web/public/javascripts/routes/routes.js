@@ -4,13 +4,13 @@ define(['alexApp'], function (app) {
 
         $routeProvider
             .when('/', {
-                controller:'MainCtrl',
+                controller: 'MainCtrl',
                 templateUrl: 'views/partials/main'
             }).
             otherwise({
                 redirectTo: '/'
             });
 
-    }])
+    }]);
 
 });

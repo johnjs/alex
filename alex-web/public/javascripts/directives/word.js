@@ -11,6 +11,6 @@ define([], function () {
                 '<td class="translation col-md-4">{{ word.translation }}</td>' +
                 '<td><span ng-click="remove({word:word})" class="glyphicon glyphicon-remove pointer"/></td></tr>'
 
-        }
-    }
-})
+        };
+    };
+});

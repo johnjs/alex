@@ -19,7 +19,7 @@ define([], function () {
                 scope.abort = function () {
                     scope.lessonName = "";
                     scope.isFormVisible = false;
-                }
+                };
             }
         };
     };

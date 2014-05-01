@@ -16,6 +16,6 @@ define([], function () {
                     method: 'PUT'
                 });
             }
-        }
-    }
+        };
+    };
 });

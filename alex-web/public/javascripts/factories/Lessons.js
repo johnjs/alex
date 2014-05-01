@@ -17,6 +17,6 @@ define([], function () {
                     method: 'POST'
                 });
             }
-        }
-    }
+        };
+    };
 });

@@ -1,26 +1,19 @@
 module.exports = function (grunt) {
 
+    require('load-grunt-tasks')(grunt);
+    require('time-grunt')(grunt);
+
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         jshint: grunt.file.readJSON('../build/jshint.json'),
         lint: {
             backend: ['./*.js', 'routes/*.js', 'app/**/*.js', 'tests/**/*.js', '!tests/public/test-main.js'],
-            frontend:[]
+            frontend: ['./public/javascripts/**/*.js']
         },
         watch: {
-            files: ['<%= lint.backend %>'],
+            files: ['<%= lint.backend %>', '<%= lint.frontend %>'],
             tasks: 'default'
-        },
-        complexity: {
-            backend: {
-                src: '<%= lint.backend %>',
-                options: {
-                    cyclomatic: 5,
-                    halstead: 14,
-                    maintainability: 80
-                }
-            }
         },
         jsbeautifier: {
             files: '<%= watch.files %>',
@@ -43,7 +36,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        mochaTest: {
+        mocha: {
             test: {
                 options: {
                     reporter: 'spec'
@@ -60,12 +53,10 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.loadNpmTasks('grunt-mocha-test');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-complexity');
 
     // Default task(s).
-    grunt.registerTask('default', ['mochaTest', 'jshint', 'karma']);
+    grunt.registerTask('default', ['jshint', 'mocha', 'jshint', 'karma']);
     grunt.registerTask('client', ['karma']);
 
 };
