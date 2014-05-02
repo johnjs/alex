@@ -36,7 +36,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        mocha: {
+        mochaTest: {
             test: {
                 options: {
                     reporter: 'spec'
@@ -53,10 +53,8 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.loadNpmTasks('grunt-complexity');
-
     // Default task(s).
-    grunt.registerTask('default', ['jshint', 'mocha', 'jshint', 'karma']);
+    grunt.registerTask('default', ['jshint', 'mochaTest', 'jshint', 'karma']);
     grunt.registerTask('client', ['karma']);
 
 };

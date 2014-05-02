@@ -1152,3 +1152,68 @@
 {"level":"info","message":"[2014-05-01T18:49:28+02:00][127.0.0.1] DELETE /words/53627b1865cc4e042142ab71","timestamp":"2014-05-01T16:49:28.350Z"}
 {"level":"info","message":"[2014-05-01T18:49:28+02:00][127.0.0.1] Word removed!","timestamp":"2014-05-01T16:49:28.354Z"}
 {"level":"info","message":"[2014-05-01T18:49:28+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-01T16:49:28.359Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-02T09:51:39.366Z"}
+{"level":"info","message":"[2014-05-02T11:51:40+02:00][127.0.0.1] GET /","timestamp":"2014-05-02T09:51:40.427Z"}
+{"username":"user","password":"pass","level":"info","message":"[2014-05-02T11:51:40+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:51:40.749Z"}
+{"username":"user","password":"incorrect password","level":"info","message":"[2014-05-02T11:51:40+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:51:40.990Z"}
+{"username":"thereIsNoSuchUser","password":"pass","level":"info","message":"[2014-05-02T11:51:41+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:51:41.229Z"}
+{"username":"user","password":"pass","level":"info","message":"[2014-05-02T11:51:41+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:51:41.233Z"}
+{"level":"info","message":"[2014-05-02T11:51:41+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-02T09:51:41.477Z"}
+{"level":"info","message":"[2014-05-02T11:51:41+02:00][127.0.0.1] GET /","timestamp":"2014-05-02T09:51:41.481Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-02T09:51:41.555Z"}
+{"username":"testuser","password":"testpass","level":"info","message":"[2014-05-02T11:51:41+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:51:41.796Z"}
+{"level":"info","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] POST /words","timestamp":"2014-05-02T09:51:42.070Z"}
+{"username":"testuser","level":"info","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] POST /words","timestamp":"2014-05-02T09:51:42.101Z"}
+{"username":"testuser","lessonId":"lesson1","level":"info","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] POST /words","timestamp":"2014-05-02T09:51:42.113Z"}
+{"username":"testuser","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-02T09:51:42.123Z"}
+{"username":"testuser","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-02T09:51:42.139Z"}
+{"level":"warn","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-05-02T09:51:42.141Z"}
+{"word":"hello","translation":"witaj","level":"info","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] POST /words/53636aae7d6ad2f81cf59481","timestamp":"2014-05-02T09:51:42.156Z"}
+{"level":"warn","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] TypeError: Object.keys called on non-object","timestamp":"2014-05-02T09:51:42.161Z"}
+{"level":"info","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] DELETE /words/53636aae7d6ad2f81cf59486","timestamp":"2014-05-02T09:51:42.173Z"}
+{"level":"info","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] Word removed!","timestamp":"2014-05-02T09:51:42.177Z"}
+{"level":"info","message":"[2014-05-02T11:51:42+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-02T09:51:42.182Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-02T09:52:27.795Z"}
+{"level":"info","message":"[2014-05-02T11:52:27+02:00][127.0.0.1] GET /login","timestamp":"2014-05-02T09:52:27.822Z"}
+{"level":"info","message":"[2014-05-02T11:52:28+02:00][127.0.0.1] GET /","timestamp":"2014-05-02T09:52:28.503Z"}
+{"username":"user","password":"pass","level":"info","message":"[2014-05-02T11:52:28+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:52:28.770Z"}
+{"username":"user","password":"incorrect password","level":"info","message":"[2014-05-02T11:52:29+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:52:29.012Z"}
+{"username":"thereIsNoSuchUser","password":"pass","level":"info","message":"[2014-05-02T11:52:29+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:52:29.252Z"}
+{"username":"user","password":"pass","level":"info","message":"[2014-05-02T11:52:29+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:52:29.256Z"}
+{"level":"info","message":"[2014-05-02T11:52:29+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-02T09:52:29.497Z"}
+{"level":"info","message":"[2014-05-02T11:52:29+02:00][127.0.0.1] GET /","timestamp":"2014-05-02T09:52:29.501Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-02T09:52:29.508Z"}
+{"username":"testuser","password":"testpass","level":"info","message":"[2014-05-02T11:52:29+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T09:52:29.745Z"}
+{"level":"info","message":"[2014-05-02T11:52:29+02:00][127.0.0.1] POST /words","timestamp":"2014-05-02T09:52:29.984Z"}
+{"username":"testuser","level":"info","message":"[2014-05-02T11:52:29+02:00][127.0.0.1] POST /words","timestamp":"2014-05-02T09:52:29.998Z"}
+{"username":"testuser","lessonId":"lesson1","level":"info","message":"[2014-05-02T11:52:30+02:00][127.0.0.1] POST /words","timestamp":"2014-05-02T09:52:30.008Z"}
+{"username":"testuser","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-05-02T11:52:30+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-02T09:52:30.019Z"}
+{"username":"testuser","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-05-02T11:52:30+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-02T09:52:30.033Z"}
+{"level":"warn","message":"[2014-05-02T11:52:30+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-05-02T09:52:30.035Z"}
+{"word":"hello","translation":"witaj","level":"info","message":"[2014-05-02T11:52:30+02:00][127.0.0.1] POST /words/53636adecb2b607419db0d95","timestamp":"2014-05-02T09:52:30.049Z"}
+{"level":"warn","message":"[2014-05-02T11:52:30+02:00][127.0.0.1] TypeError: Object.keys called on non-object","timestamp":"2014-05-02T09:52:30.054Z"}
+{"level":"info","message":"[2014-05-02T11:52:30+02:00][127.0.0.1] DELETE /words/53636adecb2b607419db0d9a","timestamp":"2014-05-02T09:52:30.066Z"}
+{"level":"info","message":"[2014-05-02T11:52:30+02:00][127.0.0.1] Word removed!","timestamp":"2014-05-02T09:52:30.071Z"}
+{"level":"info","message":"[2014-05-02T11:52:30+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-02T09:52:30.076Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-02T10:00:53.300Z"}
+{"level":"info","message":"[2014-05-02T12:00:53+02:00][127.0.0.1] GET /login","timestamp":"2014-05-02T10:00:53.325Z"}
+{"level":"info","message":"[2014-05-02T12:00:54+02:00][127.0.0.1] GET /","timestamp":"2014-05-02T10:00:54.005Z"}
+{"username":"user","password":"pass","level":"info","message":"[2014-05-02T12:00:54+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T10:00:54.259Z"}
+{"username":"user","password":"incorrect password","level":"info","message":"[2014-05-02T12:00:54+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T10:00:54.501Z"}
+{"username":"thereIsNoSuchUser","password":"pass","level":"info","message":"[2014-05-02T12:00:54+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T10:00:54.741Z"}
+{"username":"user","password":"pass","level":"info","message":"[2014-05-02T12:00:54+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T10:00:54.747Z"}
+{"level":"info","message":"[2014-05-02T12:00:54+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-02T10:00:54.983Z"}
+{"level":"info","message":"[2014-05-02T12:00:54+02:00][127.0.0.1] GET /","timestamp":"2014-05-02T10:00:54.987Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2014-05-02T10:00:54.994Z"}
+{"username":"testuser","password":"testpass","level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] POST /login","timestamp":"2014-05-02T10:00:55.237Z"}
+{"level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] POST /words","timestamp":"2014-05-02T10:00:55.476Z"}
+{"username":"testuser","level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] POST /words","timestamp":"2014-05-02T10:00:55.489Z"}
+{"username":"testuser","lessonId":"lesson1","level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] POST /words","timestamp":"2014-05-02T10:00:55.497Z"}
+{"username":"testuser","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-02T10:00:55.507Z"}
+{"username":"testuser","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] PUT /words","timestamp":"2014-05-02T10:00:55.519Z"}
+{"level":"warn","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2014-05-02T10:00:55.521Z"}
+{"word":"hello","translation":"witaj","level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] POST /words/53636cd7688ceb5814b8a553","timestamp":"2014-05-02T10:00:55.533Z"}
+{"level":"warn","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] TypeError: Object.keys called on non-object","timestamp":"2014-05-02T10:00:55.537Z"}
+{"level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] DELETE /words/53636cd7688ceb5814b8a558","timestamp":"2014-05-02T10:00:55.549Z"}
+{"level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] Word removed!","timestamp":"2014-05-02T10:00:55.552Z"}
+{"level":"info","message":"[2014-05-02T12:00:55+02:00][127.0.0.1] GET /logout","timestamp":"2014-05-02T10:00:55.558Z"}
