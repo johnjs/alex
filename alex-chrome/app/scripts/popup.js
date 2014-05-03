@@ -21,16 +21,7 @@ app.factory('Lessons', function ($http) {
     };
 });
 
-app.factory('Auth', function ($cookies) {
-    return {
-        isLoggedIn: function () {
-            console.log($cookies);
-            return 0;
-        }
-    };
-});
-
-app.directive('lessons', function (Lessons, Auth) {
+app.directive('lessons', function (Lessons) {
     return {
         restrict: 'E',
         scope: {
@@ -38,7 +29,6 @@ app.directive('lessons', function (Lessons, Auth) {
         },
         template: '<div class="row"><div class="col-md-2">Select lesson:<select ng-model="lesson" class="lesson-selector col-md-12" ng-options="l as l for l in lessons" ></select></div>',
         link: function (scope) {
-            Auth.isLoggedIn();
             Lessons.findLessons().then(function (res) {
                 scope.lessons = res.data;
                 scope.lesson = scope.lessons[0];
