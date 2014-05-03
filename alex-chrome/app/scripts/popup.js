@@ -1,17 +1,17 @@
-var app = angular.module('alexChrome', ['ngRoute', 'ngCookies']);
+var app = angular.module('alexChrome', ['ngRoute']);
 
 app.factory('Lessons', function ($http) {
     return {
         findLessons: function () {
             return $http({
-                url: 'http://cnu247br3h.nsn-intra.net:3000/lessons',
+                url: 'http://localhost:3000/lessons',
                 data: {},
                 method: 'POST'
             });
         },
         findWords: function (lessonId) {
             return $http({
-                url: 'http://cnu247br3h.nsn-intra.net:3000/words',
+                url: 'http://localhost:3000/words',
                 data: {
                     lessonId: lessonId
                 },
