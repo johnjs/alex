@@ -18,16 +18,32 @@
 
 <body ng-app="alexChrome">
 
-    <script type="text/ng-template" id="main.html">
-        <lessons lesson="lesson" lessons="lessons"></lessons>
-        <div ng-click="getWords()" class="btn btn-sm">Get words!</div>
-    </script>
+<script type="text/ng-template" id="main.html">
+    <lessons lesson="lesson"></lessons>
+    <div class="text-center">
+        <button ng-click="getWords()" type="button" class="btn btn-primary btn-sm">Get words!</button>
+    </div>
+</script>
 
-    <script type="text/ng-template" id="login.html">
-        <h1>Please, log in!</h1>
-    </script>
+<script type="text/ng-template" id="lessons.html">
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="lessonElem" class="col-sm-2 control-label">Lessons:</label>
+            <div class="col-sm-10">
+                <select ng-model="lesson" id="lessonElem" class="form-control lesson-selector col-md-12" ng-options="l as l for l in lessons" ></select>
+            </div>
+        </div>
+    </form>
+</script>
 
-    <div ng-view></div>
+<script type="text/ng-template" id="login.html">
+    <h4>Please, log in!</h4>
+</script>
+
+<div class="popup-panel panel panel-primary">
+    <div class="panel-heading">Welcome to Alex!</div>
+    <div ng-view class="panel-body"></div>
+</div>
 
 <script src="scripts/popup.js"></script>
 </body>

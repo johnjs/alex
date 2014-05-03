@@ -27,7 +27,7 @@ app.directive('lessons', function (Lessons) {
         scope: {
             lesson: "="
         },
-        template: '<div class="row"><div class="col-md-2">Select lesson:<select ng-model="lesson" class="lesson-selector col-md-12" ng-options="l as l for l in lessons" ></select></div>',
+        templateUrl:'lessons.html',
         link: function (scope) {
             Lessons.findLessons().then(function (res) {
                 scope.lessons = res.data;

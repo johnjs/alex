@@ -1,3 +1,9 @@
 body {
     padding: 20px;
 }
+
+.popup-panel{
+    width: 12em;
+    height: 12em;
+}
+
