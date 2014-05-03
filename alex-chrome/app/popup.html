@@ -2,16 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="A basic template for a Chrome Extension using Twitter Bootstrap 3">
-    <meta name="author" content="Elliot Hesp">
-
-    <title>Chrome Extension with Twitter Bootstrap 3.0</title>
+    <title>Alex</title>
 
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
 
     <!-- Cascading Style Sheets -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -20,14 +18,16 @@
 
 <body ng-app="alexChrome">
 
-<script type="text/ng-template" id="main.html">
-    <div>Test!</div>
-    <lessons lesson="lesson"></lessons>
-    <div ng-click="getWords()" class="btn btn-sm">Get words!</div>
+    <script type="text/ng-template" id="main.html">
+        <lessons lesson="lesson" lessons="lessons"></lessons>
+        <div ng-click="getWords()" class="btn btn-sm">Get words!</div>
+    </script>
 
-</script>
+    <script type="text/ng-template" id="login.html">
+        <h1>Please, log in!</h1>
+    </script>
 
-<div ng-view></div>
+    <div ng-view></div>
 
 <script src="scripts/popup.js"></script>
 </body>

@@ -30,6 +30,11 @@ exports.badRequest = function(message, res) {
     prepareResponseWithMessage(res, 400, message);
 };
 
+exports.unauthorized = function(message, res) {
+    logger.logResponse('warn', message, res);
+    prepareResponseWithMessage(res, 401, message);
+};
+
 exports.notFound = function(message, res) {
     logger.logResponse('warn', message, res);
     prepareResponseWithMessage(res, 404, message);

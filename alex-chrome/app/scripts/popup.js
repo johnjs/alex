@@ -1,17 +1,17 @@
-var app = angular.module('alexChrome', ['ngRoute']);
+var app = angular.module('alexChrome', ['ngRoute', 'ngCookies']);
 
 app.factory('Lessons', function ($http) {
     return {
         findLessons: function () {
             return $http({
-                url: '/lessons',
+                url: 'http://cnu247br3h.nsn-intra.net:3000/lessons',
                 data: {},
                 method: 'POST'
             });
         },
         findWords: function (lessonId) {
             return $http({
-                url: '/words',
+                url: 'http://cnu247br3h.nsn-intra.net:3000/words',
                 data: {
                     lessonId: lessonId
                 },
@@ -21,14 +21,24 @@ app.factory('Lessons', function ($http) {
     };
 });
 
-app.directive('lessons', function (Lessons) {
+app.factory('Auth', function ($cookies) {
+    return {
+        isLoggedIn: function () {
+            console.log($cookies);
+            return 0;
+        }
+    };
+});
+
+app.directive('lessons', function (Lessons, Auth) {
     return {
         restrict: 'E',
         scope: {
             lesson: "="
         },
-        template: '<div class="row"><div class="col-md-2"><select ng-model="lesson" class="lesson-selector col-md-12" ng-options="l as l for l in lessons" ></select></div>',
+        template: '<div class="row"><div class="col-md-2">Select lesson:<select ng-model="lesson" class="lesson-selector col-md-12" ng-options="l as l for l in lessons" ></select></div>',
         link: function (scope) {
+            Auth.isLoggedIn();
             Lessons.findLessons().then(function (res) {
                 scope.lessons = res.data;
                 scope.lesson = scope.lessons[0];
@@ -48,14 +58,30 @@ app.controller('MainCtrl', function ($scope, Lessons) {
     };
 });
 
-app.config(['$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
 
     $routeProvider
         .when('/', {
             controller: 'MainCtrl',
             templateUrl: 'main.html'
         }).
+        when('/login', {
+            controller: 'LoginCtrl',
+            templateUrl: 'login.html'
+        }).
         otherwise({
             redirectTo: '/'
         });
+
+    $httpProvider.interceptors.push(function ($q, $location) {
+        return {
+            'responseError': function (rejection) {
+                if (rejection.status === 401) {
+                    $location.url('/login');
+                }
+                return $q.reject(rejection);
+            }
+        };
+    });
 }]);
+

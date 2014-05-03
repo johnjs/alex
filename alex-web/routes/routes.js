@@ -1,4 +1,5 @@
 var views = require('./views')();
+var Response = require('../app/utils/Response');
 
 module.exports = function (app, users, words, passport) {
 
@@ -7,6 +8,14 @@ module.exports = function (app, users, words, passport) {
             return next();
         }
         res.redirect('/login');
+    }
+
+    //TODO[DoMi] Add tests
+    function hasAccess(req, res, next) {
+        if (req.isAuthenticated()) {
+            return next();
+        }
+        Response.unauthorized("You're not logged in!", res);
     }
 
     var usersRouting = require('./users')(users, passport);
@@ -20,10 +29,10 @@ module.exports = function (app, users, words, passport) {
     app.get('/logout', usersRouting.logout);
     app.put('/users', usersRouting.save);
 
-    app.put('/words', isLoggedIn, wordsRouting.createWord);
-    app.post('/words', isLoggedIn, wordsRouting.findWords);
-    app.post('/words/:id', isLoggedIn, wordsRouting.updateWord);
-    app.del('/words/:id', isLoggedIn, wordsRouting.removeWord);
-    app.post('/lessons', isLoggedIn, wordsRouting.findLessons);
+    app.put('/words', hasAccess, wordsRouting.createWord);
+    app.post('/words', hasAccess, wordsRouting.findWords);
+    app.post('/words/:id', hasAccess, wordsRouting.updateWord);
+    app.del('/words/:id', hasAccess, wordsRouting.removeWord);
+    app.post('/lessons', hasAccess, wordsRouting.findLessons);
 
 };
