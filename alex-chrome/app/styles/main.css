@@ -3,7 +3,7 @@ body {
 }
 
 .popup-panel{
-    width: 12em;
-    height: 12em;
+    min-width: 16em;
+    min-height: 12em;
 }
 

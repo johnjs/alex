@@ -21,24 +21,18 @@ app.factory('Lessons', function ($http) {
     };
 });
 
-app.directive('lessons', function (Lessons) {
-    return {
-        restrict: 'E',
-        scope: {
-            lesson: "="
-        },
-        templateUrl:'lessons.html',
-        link: function (scope) {
-            Lessons.findLessons().then(function (res) {
-                scope.lessons = res.data;
-                scope.lesson = scope.lessons[0];
-            });
-        }
-    };
-});
-
 app.controller('MainCtrl', function ($scope, Lessons) {
-    $scope.lesson = '';
+    $scope.lesson = null;
+    $scope.lessons = [];
+
+    Lessons.findLessons().then(function (res) {
+        $scope.lessons = res.data;
+        if ($scope.lessons.length > 0) {
+            $scope.lesson = $scope.lessons[0];
+        }
+
+    });
+
     $scope.getWords = function () {
         Lessons.findWords($scope.lesson).then(function (res) {
             chrome.tabs.getSelected(null, function (tab) {
@@ -74,4 +68,5 @@ app.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpPr
         };
     });
 }]);
+
 
