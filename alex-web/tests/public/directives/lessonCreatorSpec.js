@@ -1,62 +1,61 @@
-define(['alexApp', 'views/partials/lessonCreator.jade', 'angular', 'angular-mocks'], function () {
-    describe('Word directive', function () {
+define(['alexApp', 'views/partials/lessonCreator.jade', 'angular', 'angular-mocks'], function() {
+  describe('Word directive', function() {
 
-        var element;
-        var scope;
+    var element;
+    var scope;
 
-        beforeEach(module('alexApp'));
-        beforeEach(module('views/partials/lessonCreator'));
+    beforeEach(module('alexApp'));
+    beforeEach(module('views/partials/lessonCreator'));
 
-        beforeEach(inject(function ($compile, $rootScope) {
-            scope = $rootScope.$new();
-            scope.addLesson = function (lessonName) {
-            };
-            spyOn(scope, 'addLesson').andCallThrough();
+    beforeEach(inject(function($compile, $rootScope) {
+      scope = $rootScope.$new();
+      scope.addLesson = function(lessonName) {};
+      spyOn(scope, 'addLesson').andCallThrough();
 
-            element = angular.element('<lessoncreator add="addLesson(lessonName)"/>');
-            $compile(element)(scope);
-        }));
+      element = angular.element('<lessoncreator add="addLesson(lessonName)"/>');
+      $compile(element)(scope);
+    }));
 
-        it('should be not visible initially', function () {
-            //given
-            scope.$digest();
+    it('should be not visible initially', function() {
+      //given
+      scope.$digest();
 
-            //when
-            var actualVisibilityOfForm = element.isolateScope().isFormVisible;
+      //when
+      var actualVisibilityOfForm = element.isolateScope().isFormVisible;
 
-            //then
-            expect(actualVisibilityOfForm).toBeFalsy();
-        });
-
-        it('should invoke an add method of parent scope', function () {
-            //given
-            scope.$digest();
-            element.isolateScope().isFormVisible = true;
-            var lessonToAdd = 'lesson';
-
-            //when
-            element.isolateScope().lessonName = lessonToAdd;
-            element.isolateScope().addLesson();
-            var actualVisibilityOfForm = element.isolateScope().isFormVisible;
-
-            //then
-            expect(scope.addLesson).toHaveBeenCalledWith('lesson');
-            expect(actualVisibilityOfForm).toBeFalsy();
-        });
-
-        it('should should clear lesson input field and hide a form', function () {
-            //given
-            scope.$digest();
-            element.isolateScope().isFormVisible = true;
-            element.isolateScope().lessonName = 'lesson';
-
-            //when
-            element.isolateScope().abort();
-
-            //then
-            expect(element.isolateScope().isFormVisible).toBeFalsy();
-            expect(element.isolateScope().lessonName).toBe('');
-        });
-
+      //then
+      expect(actualVisibilityOfForm).toBeFalsy();
     });
+
+    it('should invoke an add method of parent scope', function() {
+      //given
+      scope.$digest();
+      element.isolateScope().isFormVisible = true;
+      var lessonToAdd = 'lesson';
+
+      //when
+      element.isolateScope().lessonName = lessonToAdd;
+      element.isolateScope().addLesson();
+      var actualVisibilityOfForm = element.isolateScope().isFormVisible;
+
+      //then
+      expect(scope.addLesson).toHaveBeenCalledWith('lesson');
+      expect(actualVisibilityOfForm).toBeFalsy();
+    });
+
+    it('should should clear lesson input field and hide a form', function() {
+      //given
+      scope.$digest();
+      element.isolateScope().isFormVisible = true;
+      element.isolateScope().lessonName = 'lesson';
+
+      //when
+      element.isolateScope().abort();
+
+      //then
+      expect(element.isolateScope().isFormVisible).toBeFalsy();
+      expect(element.isolateScope().lessonName).toBe('');
+    });
+
+  });
 });

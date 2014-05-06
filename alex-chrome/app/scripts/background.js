@@ -1,5 +1,7 @@
-chrome.runtime.onInstalled.addListener(function (details) {
+chrome.runtime.onInstalled.addListener(function(details) {
 
 });
 
-chrome.browserAction.setBadgeText({text: '\'Allo'});
+chrome.browserAction.setBadgeText({
+  text: '\'Allo'
+});

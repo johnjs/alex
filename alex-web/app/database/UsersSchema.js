@@ -4,29 +4,29 @@ var bcrypt = require('bcrypt-nodejs');
 var SALT_FACTOR = 10;
 
 var UsersSchema = mongoose.Schema({
-    username: 'string',
-    password: 'string'
+  username: 'string',
+  password: 'string'
 });
 
-UsersSchema.methods.comparePassword = function (candidatePassword) {
-    return Q.denodeify(bcrypt.compare.bind(this))(candidatePassword, this.password);
+UsersSchema.methods.comparePassword = function(candidatePassword) {
+  return Q.denodeify(bcrypt.compare.bind(this))(candidatePassword, this.password);
 };
 
-var preSaveAndUpdateAction = function (next) {
-    var user = this;
+var preSaveAndUpdateAction = function(next) {
+  var user = this;
 
-    if (!user.isModified('password')) {
-        return next();
-    }
+  if (!user.isModified('password')) {
+    return next();
+  }
 
-    Q.denodeify(bcrypt.genSalt)(SALT_FACTOR).then(function (salt) {
-        return salt;
-    }).then(function (salt) {
-        return Q.denodeify(bcrypt.hash)(user.password, salt, null);
-    }).then(function (hash) {
-        user.password = hash;
-        next();
-    });
+  Q.denodeify(bcrypt.genSalt)(SALT_FACTOR).then(function(salt) {
+    return salt;
+  }).then(function(salt) {
+    return Q.denodeify(bcrypt.hash)(user.password, salt, null);
+  }).then(function(hash) {
+    user.password = hash;
+    next();
+  });
 
 };
 

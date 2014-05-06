@@ -1,60 +1,60 @@
-define(['alexApp', 'views/partials/wordCreator.jade', 'angular', 'angular-mocks'], function () {
-    describe('Words creator directive', function () {
+define(['alexApp', 'views/partials/wordCreator.jade', 'angular', 'angular-mocks'], function() {
+  describe('Words creator directive', function() {
 
-        var element;
-        var scope;
+    var element;
+    var scope;
 
-        beforeEach(module('alexApp'));
-        beforeEach(module('views/partials/wordCreator'));
+    beforeEach(module('alexApp'));
+    beforeEach(module('views/partials/wordCreator'));
 
-        beforeEach(inject(function ($compile, $rootScope) {
-            scope = $rootScope.$new();
-            scope.add = function (word, translation) {
-                return {
-                    then: function (cbk) {
-                        cbk();
-                    }
-                };
-            };
-            spyOn(scope, 'add').andCallThrough();
-
-            element = angular.element('<wordcreator add="add(word, translation)"></wordcreator>');
-            $compile(element)(scope);
-        }));
-
-        var ITEM_TO_BE_ADDED = {
-            word: 'word',
-            translation: 'translation'
+    beforeEach(inject(function($compile, $rootScope) {
+      scope = $rootScope.$new();
+      scope.add = function(word, translation) {
+        return {
+          then: function(cbk) {
+            cbk();
+          }
         };
+      };
+      spyOn(scope, 'add').andCallThrough();
 
-        function initScope() {
-            scope.$digest();
-            element.isolateScope().word = ITEM_TO_BE_ADDED.word;
-            element.isolateScope().translation = ITEM_TO_BE_ADDED.translation;
-        }
+      element = angular.element('<wordcreator add="add(word, translation)"></wordcreator>');
+      $compile(element)(scope);
+    }));
 
-        it('should invoke an add method of parent scope and ', function () {
-            //given
-            initScope();
+    var ITEM_TO_BE_ADDED = {
+      word: 'word',
+      translation: 'translation'
+    };
 
-            //when
-            element.isolateScope().formSubmitAction();
+    function initScope() {
+      scope.$digest();
+      element.isolateScope().word = ITEM_TO_BE_ADDED.word;
+      element.isolateScope().translation = ITEM_TO_BE_ADDED.translation;
+    }
 
-            //then
-            expect(scope.add).toHaveBeenCalledWith(ITEM_TO_BE_ADDED.word, ITEM_TO_BE_ADDED.translation);
-        });
+    it('should invoke an add method of parent scope and ', function() {
+      //given
+      initScope();
 
-        it('should clear form inputs after successful adding of a new word', function () {
-            //given
-            initScope();
+      //when
+      element.isolateScope().formSubmitAction();
 
-            //when
-            element.isolateScope().formSubmitAction();
-
-            //then
-            expect(element.isolateScope().word).toBe("");
-            expect(element.isolateScope().translation).toBe("");
-        });
-
+      //then
+      expect(scope.add).toHaveBeenCalledWith(ITEM_TO_BE_ADDED.word, ITEM_TO_BE_ADDED.translation);
     });
+
+    it('should clear form inputs after successful adding of a new word', function() {
+      //given
+      initScope();
+
+      //when
+      element.isolateScope().formSubmitAction();
+
+      //then
+      expect(element.isolateScope().word).toBe("");
+      expect(element.isolateScope().translation).toBe("");
+    });
+
+  });
 });

@@ -31,14 +31,14 @@
                 "http://stackoverflow.com/*"
             ],
             "css": [
-                "bower_components/angular/angular-csp.css",
-                "bower_components/bootstrap/dist/css/bootstrap.min.css",
+                "libs/angular/angular-csp.css",
+                "libs/bootstrap/dist/css/bootstrap.min.css",
                 "styles/main.css"
             ],
             "js": [
-                "bower_components/jquery/dist/jquery.min.js",
-                "bower_components/angular/angular.js",
-                "bower_components/underscore/underscore.js",
+                "libs/jquery/dist/jquery.min.js",
+                "libs/angular/angular.js",
+                "libs/underscore/underscore.js",
                 "scripts/contentscript.js"
             ],
             "run_at": "document_end",
@@ -47,6 +47,6 @@
     ],
     "content_security_policy": "script-src 'self'; object-src 'self'",
     "web_accessible_resources": [
-        "bower_components/**/*"
+        "libs/**/*"
     ]
 }
