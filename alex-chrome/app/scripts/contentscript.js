@@ -49,5 +49,4 @@ window.addEventListener('load', function () {
         scope.$apply();
     });
 
-
 });
