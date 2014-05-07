@@ -1,5 +1,8 @@
 div
     h2 Words
+    div(class="pull-right input-group col-md-2")
+        input(type="text", class="form-control", ng-model="searchText", placeholder="Search")
+        span(class="input-group-addon glyphicon glyphicon-search")
     table(class="table")
         thead
             tr
@@ -7,6 +10,6 @@ div
                 th translation
                 th
         tbody(class="table")
-            tr(ng-repeat="w in words", word="w", remove="remove(word)")
+            tr(ng-repeat="w in words | filter:{word:searchText}", word="w", remove="remove(word)")
     hr
     wordcreator(add="add(word, translation)")

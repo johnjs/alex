@@ -21,7 +21,7 @@ define(['_'], function(_) {
           };
 
           return Words.add(wordToAdd).then(function(res) {
-            scope.words.push(res.data[0]);
+            scope.words.push(_.first(res.data));
           });
         };
 

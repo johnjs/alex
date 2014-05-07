@@ -6,7 +6,7 @@ define([], function() {
       scope: {
         add: "&"
       },
-      link: function(scope, element, attr) {
+      link: function(scope) {
         scope.isFormVisible = false;
         scope.lessonName = "";
 

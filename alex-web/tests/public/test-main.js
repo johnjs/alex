@@ -45,6 +45,9 @@ requirejs.config({
         },
         'views/partials/words.jade': {
             deps: ['angular']
+        },
+        'views/partials/lessons.jade': {
+            deps: ['angular']
         }
     },
     deps: tests,

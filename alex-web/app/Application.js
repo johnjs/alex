@@ -66,7 +66,7 @@ Application.prototype = {
     this.users = new UsersCollection(this.database);
     this.words = new WordsCollection(this.database);
 
-    require('../config/passport')(this.users, passport);
+    require('./auth/passport')(this.users, passport);
   },
 
   _initRoutes: function() {
