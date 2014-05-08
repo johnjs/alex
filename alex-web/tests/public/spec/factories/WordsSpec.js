@@ -2,38 +2,35 @@ define(['alexApp', 'angular', 'angular-mocks'], function() {
   describe('Words factory', function() {
 
     var $httpBackend;
-    var cut;
+    var Word;
 
     beforeEach(module('alexApp'));
 
-    beforeEach(inject(function(Words, _$httpBackend_) {
-      cut = Words;
+    beforeEach(inject(function(_Word_, _$httpBackend_) {
+      Word = _Word_;
       $httpBackend = _$httpBackend_;
     }));
 
     it('should add a new word', function() {
       //given
-      var expected = [{
-        word: 'word',
-        translation: 'slowo',
-        lessonId: 'lesson',
-        username: 'user',
-        _id: '1'
-
-      }];
       var wordsData = {
         word: 'word',
         translation: 'slowo',
         lessonId: 'lesson',
         username: 'user'
       };
+      var httpResponse = angular.extend({
+        _id: '1'
+      }, wordsData);
+
+      var wordToBeAdded = new Word(wordsData);
+      var expected = new Word(httpResponse);
 
       //when
-      $httpBackend.expectPUT('/words', JSON.stringify(wordsData)).respond(expected);
-      cut.add(wordsData).then(function(response) {
+      $httpBackend.expectPUT('/words', JSON.stringify(wordsData)).respond([httpResponse]);
+      wordToBeAdded.create().then(function(createdWord) {
         //then
-        expect(response.data).toEqual(expected);
-
+        expect(createdWord).toEqual(expected);
       });
 
       $httpBackend.flush();
@@ -50,9 +47,11 @@ define(['alexApp', 'angular', 'angular-mocks'], function() {
 
       };
 
+      var w = new Word(wordToBeRemoved);
+
       //when
       $httpBackend.expectDELETE('/words/' + wordToBeRemoved._id).respond(200);
-      cut.remove(wordToBeRemoved);
+      w.remove();
 
       $httpBackend.flush();
     });

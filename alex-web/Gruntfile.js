@@ -29,6 +29,34 @@ module.exports = function(grunt) {
       unit: {
         configFile: 'tests/public/karma.conf.js'
       }
+    },
+
+    protractor: {
+      options: {
+        keepAlive: true
+      },
+      all: {
+        configFile: 'protractor.conf.js'
+      }
+    },
+    shell: {
+      protractor_webdriver_manager_update: {
+        options: {
+          stdout: true
+        },
+        command: require('path').resolve(__dirname, 'node_modules', 'protractor', 'bin', 'webdriver-manager') + ' update'
+      }
+    },
+    selenium_webdriver_phantom: {
+      phantom: {
+        options: {
+          phantom: {}
+        }
+      }
+    },
+    others: {
+      path: '/path/to/selenium/standalone.jar',
+      args: ['-port', '8888']
     }
 
   });
@@ -36,5 +64,6 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('default', ['jsbeautifier', 'jshint', 'mochaTest', 'jshint', 'karma']);
   grunt.registerTask('client', ['karma']);
+  //    grunt.registerTask('test:protractor', ['selenium_webdriver_phantom:phantom', 'protractor', 'selenium_webdriver_phantom:stop']);
 
 };

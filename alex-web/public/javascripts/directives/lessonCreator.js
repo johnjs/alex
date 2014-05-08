@@ -8,18 +8,18 @@ define([], function() {
       },
       link: function(scope) {
         scope.isFormVisible = false;
-        scope.lessonName = "";
+        scope.lessonId = "";
 
         scope.addLesson = function() {
           scope.add({
-            lessonName: scope.lessonName
+            lessonId: scope.lessonId
           });
-          scope.lessonName = "";
+          scope.lessonId = "";
           scope.isFormVisible = false;
         };
 
         scope.abort = function() {
-          scope.lessonName = "";
+          scope.lessonId = "";
           scope.isFormVisible = false;
         };
       }

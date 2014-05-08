@@ -9,10 +9,10 @@ define(['alexApp', 'views/partials/lessonCreator.jade', 'angular', 'angular-mock
 
     beforeEach(inject(function($compile, $rootScope) {
       scope = $rootScope.$new();
-      scope.addLesson = function(lessonName) {};
+      scope.addLesson = function(lessonId) {};
       spyOn(scope, 'addLesson').andCallThrough();
 
-      element = angular.element('<lessoncreator add="addLesson(lessonName)"/>');
+      element = angular.element('<lessoncreator add="addLesson(lessonId)"/>');
       $compile(element)(scope);
     }));
 
@@ -34,7 +34,7 @@ define(['alexApp', 'views/partials/lessonCreator.jade', 'angular', 'angular-mock
       var lessonToAdd = 'lesson';
 
       //when
-      element.isolateScope().lessonName = lessonToAdd;
+      element.isolateScope().lessonId = lessonToAdd;
       element.isolateScope().addLesson();
       var actualVisibilityOfForm = element.isolateScope().isFormVisible;
 
@@ -47,14 +47,14 @@ define(['alexApp', 'views/partials/lessonCreator.jade', 'angular', 'angular-mock
       //given
       scope.$digest();
       element.isolateScope().isFormVisible = true;
-      element.isolateScope().lessonName = 'lesson';
+      element.isolateScope().lessonId = 'lesson';
 
       //when
       element.isolateScope().abort();
 
       //then
       expect(element.isolateScope().isFormVisible).toBeFalsy();
-      expect(element.isolateScope().lessonName).toBe('');
+      expect(element.isolateScope().lessonId).toBe('');
     });
 
   });

@@ -1,20 +1,20 @@
 define(['_'], function(_) {
-  return function(Lessons) {
+  return function(Lesson) {
     return {
       restrict: 'E',
       scope: {
         lesson: '='
       },
       templateUrl: 'views/partials/lessons',
-      link: function(scope, element, attr) {
+      link: function(scope) {
         scope.lessons = [];
-        scope.addLesson = function(lessonName) {
-          scope.lessons.push(lessonName);
-          scope.lesson = lessonName;
+        scope.addLesson = function(lessonId) {
+          scope.lesson = new Lesson(lessonId);
+          scope.lessons.push(scope.lesson);
         };
 
-        Lessons.findLessons().then(function(res) {
-          scope.lessons = res.data;
+        Lesson.findLessons().then(function(lessons) {
+          scope.lessons = lessons;
           if (!_.isEmpty(scope.lessons)) {
             scope.lesson = _.first(scope.lessons);
           }

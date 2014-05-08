@@ -5,26 +5,25 @@ define(['angular', 'angular-mocks', 'alexApp', 'views/partials/lessons.jade', 'v
 
   describe("Lessons directive", function() {
     //given
-    var LESSONS = ['l1', 'l2', 'l3'];
-    beforeEach(module('alexApp', function($provide) {
-      $provide.value('Lessons', {
-        findLessons: function() {
-          return {
-            then: function(cbk) {
-              var response = {
-                data: LESSONS
-              };
-              cbk(response);
-            }
-          };
-        }
-      });
-    }));
+    var LESSONS;
 
+    beforeEach(module('alexApp'));
     beforeEach(module('views/partials/lessonCreator'));
     beforeEach(module('views/partials/lessons'));
 
-    beforeEach(inject(function($compile, $rootScope) {
+    beforeEach(inject(function($compile, $rootScope, Lesson) {
+      //given
+      LESSONS = _.map(['l1', 'l2', 'l3'], function(lessonId) {
+        return new Lesson(lessonId);
+      });
+      Lesson.findLessons = function() {
+        return {
+          then: function(cbk) {
+            cbk(LESSONS);
+          }
+        };
+      };
+
       scope = $rootScope.$new();
       scope.lesson = null;
       element = angular.element('<lessons lesson="lesson"></lessons>');
@@ -37,7 +36,7 @@ define(['angular', 'angular-mocks', 'alexApp', 'views/partials/lessons.jade', 'v
 
       //then
       expect(element.isolateScope().lessons).toBe(LESSONS);
-      expect(scope.lesson).toBe('l1');
+      expect(scope.lesson).toBe(_.first(LESSONS));
     });
   });
 });

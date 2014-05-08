@@ -2,81 +2,79 @@ define(['_', 'angular', 'angular-mocks', 'alexApp', 'views/partials/words.jade',
 
   var scope;
   var element;
-  var Lessons;
-  var Words;
+  var Lesson;
+  var Word;
 
-  describe("Words directive", function() {
+  //given
+  var WORD_TO_BE_ADDED = {
+    word: 'w3',
+    translation: 't3',
+    lessonId: 'l3'
+  };
+  var ID_OF_WORD_TO_BE_ADDED = 3;
 
-    //given
-    var WORDS = [{
-      word: 'w1',
-      translation: 't1',
-      lessonId: 'l1',
-      _id: 1
-    }, {
-      word: 'w2',
-      translation: 't2',
-      lessonId: 'l2',
-      _id: 2
-    }];
-
-    var WORD_TO_BE_ADDED = {
-      word: 'w3',
-      translation: 't3',
-      lessonId: 'l3'
+  var getExistingWords = function() {
+    return [
+      new Word({
+        word: 'w1',
+        translation: 't1',
+        lessonId: 'l1',
+        _id: 1
+      }),
+      new Word({
+        word: 'w2',
+        translation: 't2',
+        lessonId: 'l2',
+        _id: 2
+      })
+    ];
+  };
+  var mockServices = function() {
+    Lesson.prototype.findWords = function() {
+      return {
+        then: function(cbk) {
+          cbk(getExistingWords());
+        }
+      };
     };
-    var ID_OF_WORD_TO_BE_ADDED = 3;
 
-    beforeEach(module('alexApp', function($provide) {
-      $provide.value('Lessons', {
-        findWords: function() {
-          return {
-            then: function(cbk) {
-              var response = {
-                data: WORDS
-              };
-              cbk(response);
-            }
-          };
+    Word.prototype.create = function() {
+      var word = this;
+      return {
+        then: function(cbk) {
+          cbk(_.extend(word, {
+            _id: ID_OF_WORD_TO_BE_ADDED
+          }));
         }
-      });
+      };
+    };
 
-      $provide.value('Words', {
-        add: function(word) {
-          return {
-            then: function(cbk) {
-              var response = {
-                data: [_.extend(word, {
-                  _id: ID_OF_WORD_TO_BE_ADDED
-                })]
-              };
-              cbk(response);
-            }
-          };
-        },
-        remove: function(word) {
-          return {
-            then: function(cbk) {
-              cbk();
-            }
-          };
+    Word.prototype.remove = function() {
+      return {
+        then: function(cbk) {
+          cbk();
         }
-      });
-    }));
+      };
+    };
+  };
 
+  describe("Word directive", function() {
+
+    beforeEach(module('alexApp'));
     beforeEach(module('views/partials/lessonCreator'));
     beforeEach(module('views/partials/words'));
 
-    beforeEach(inject(function($compile, $rootScope, _Lessons_, _Words_) {
+    beforeEach(inject(function($compile, $rootScope, _Lesson_, _Word_) {
       scope = $rootScope.$new();
       scope.lesson = null;
 
-      Lessons = _Lessons_;
-      Words = _Words_;
+      Lesson = _Lesson_;
+      Word = _Word_;
 
-      spyOn(Lessons, 'findWords').andCallThrough();
-      spyOn(Words, 'add').andCallThrough();
-      spyOn(Words, 'remove').andCallThrough();
+      mockServices();
+
+      spyOn(Word.prototype, 'create').andCallThrough();
+      spyOn(Word.prototype, 'remove').andCallThrough();
 
       element = angular.element('<words lesson="lesson"/>');
       $compile(element)(scope);
@@ -84,68 +82,75 @@ define(['_', 'angular', 'angular-mocks', 'alexApp', 'views/partials/words.jade',
 
     it("should refresh words list", function() {
       //given
-      scope.lesson = 'currentLesson';
+      var expectedWordList = getExistingWords();
+      scope.lesson = new Lesson('currentLesson');
+      spyOn(scope.lesson, 'findWords').andCallThrough();
       scope.$digest();
 
       //then
       element.isolateScope().refreshWords();
 
       //when
-      expect(element.isolateScope().words).toEqual(WORDS);
-      expect(Lessons.findWords).toHaveBeenCalledWith(scope.lesson);
-      expect(Lessons.findWords.callCount).toBe(2);
+      expect(element.isolateScope().words).toEqual(expectedWordList);
+      expect(scope.lesson.findWords.callCount).toBe(2);
     });
 
     it("should refresh words after each change of current lesson", function() {
       //given
-      scope.lesson = 'currentLesson';
+      var expectedWordList = getExistingWords();
+
+      var previousLesson = new Lesson('currentLesson');
+      spyOn(previousLesson, 'findWords').andCallThrough();
+
+      var nextLesson = new Lesson('anotherLesson');
+      spyOn(nextLesson, 'findWords').andCallThrough();
+
+      //when
+      scope.lesson = previousLesson;
       scope.$digest();
 
       //then
-      scope.lesson = 'anotherLesson';
+      scope.lesson = nextLesson;
       scope.$digest();
 
       //when
-      expect(element.isolateScope().words).toEqual(WORDS);
-      expect(Lessons.findWords).toHaveBeenCalledWith(scope.lesson);
-      expect(Lessons.findWords.callCount).toBe(2);
+      expect(element.isolateScope().words).toEqual(expectedWordList);
+      expect(previousLesson.findWords).toHaveBeenCalled();
+      expect(nextLesson.findWords).toHaveBeenCalled();
     });
 
     it("should add a new word", function() {
       //given
-      scope.lesson = WORD_TO_BE_ADDED.lessonId;
+      scope.lesson = new Lesson(WORD_TO_BE_ADDED.lessonId);
       scope.$digest();
-      element.isolateScope().words = [];
-      var expectedWord = _.extend(WORD_TO_BE_ADDED, {
-        _id: ID_OF_WORD_TO_BE_ADDED
-      });
 
+      element.isolateScope().words = [];
+      var expectedWord = new Word(_.extend(WORD_TO_BE_ADDED, {
+        _id: ID_OF_WORD_TO_BE_ADDED
+      }));
 
       //when
       element.isolateScope().add(WORD_TO_BE_ADDED.word, WORD_TO_BE_ADDED.translation);
       scope.$digest();
 
       //then
-      expect(Words.add).toHaveBeenCalledWith(WORD_TO_BE_ADDED);
-      expect(Words.add.callCount).toBe(1);
       expect(element.isolateScope().words).toEqual([expectedWord]);
     });
 
     it("should remove existing word", function() {
       //given
       scope.$digest();
-      element.isolateScope().words = WORDS;
-      var wordToBeRemoved = WORDS[0];
-      var expectedWordsAfterRemoval = [WORDS[1]];
+      var existingWords = getExistingWords();
+      element.isolateScope().words = existingWords;
+      var wordToBeRemoved = existingWords[0];
+      var expectedWordsAfterRemoval = [existingWords[1]];
 
       //when
       element.isolateScope().remove(wordToBeRemoved);
 
       //then
-      expect(Words.remove).toHaveBeenCalledWith(wordToBeRemoved);
-      expect(Words.remove.callCount).toBe(1);
+      expect(wordToBeRemoved.remove).toHaveBeenCalled();
       expect(element.isolateScope().words).toEqual(expectedWordsAfterRemoval);
-
     });
 
   });

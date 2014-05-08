@@ -1,9 +1,9 @@
-define(['angular', 'controllers/MainCtrl', 'factories/Lessons', 'factories/Words', 'directives/lessons', 'directives/words', 'directives/word', 'directives/lessonCreator', 'directives/wordCreator', 'angular-route', 'angular-animate'], function(angular, MainCtrl, Lessons, Words, lessons, words, word, lessonCreator, wordCreator) {
+define(['angular', 'controllers/MainCtrl', 'factories/Lesson', 'factories/Word', 'directives/lessons', 'directives/words', 'directives/word', 'directives/lessonCreator', 'directives/wordCreator', 'angular-route', 'angular-animate'], function(angular, MainCtrl, Lesson, Word, lessons, words, word, lessonCreator, wordCreator) {
   var app = angular.module('alexApp', ['ngRoute', 'ngAnimate']);
 
   app.controller('MainCtrl', MainCtrl).
-  factory('Lessons', Lessons).
-  factory('Words', Words).
+  factory('Lesson', Lesson).
+  factory('Word', Word).
   directive('lessons', lessons).
   directive('words', words).
   directive('word', word).
