@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         keepAlive: true
       },
       all: {
-        configFile: 'protractor.conf.js'
+        configFile: 'tests/public/protractor.conf.js'
       }
     },
     shell: {
@@ -55,15 +55,15 @@ module.exports = function(grunt) {
       }
     },
     others: {
-      path: '/path/to/selenium/standalone.jar',
       args: ['-port', '8888']
     }
 
   });
 
   // Default task(s).
-  grunt.registerTask('default', ['jsbeautifier', 'jshint', 'mochaTest', 'jshint', 'karma']);
+  grunt.registerTask('test:protractor', ['shell:protractor_webdriver_manager_update', 'selenium_webdriver_phantom:phantom', 'protractor', 'selenium_webdriver_phantom:stop']);
+  grunt.registerTask('default', ['jsbeautifier', 'jshint', 'mochaTest', 'jshint', 'karma', 'test:protractor']);
   grunt.registerTask('client', ['karma']);
-  //    grunt.registerTask('test:protractor', ['selenium_webdriver_phantom:phantom', 'protractor', 'selenium_webdriver_phantom:stop']);
+
 
 };
