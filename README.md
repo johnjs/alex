@@ -18,5 +18,9 @@ Alex is a project supporting learning of new words and phrases. It consists of t
 	- testing: Karma, Jasmine,
 	- GUI: Twitter Bootstrap.
 
+![alt tag](https://github.com/johnjs/alex/blob/master/images/chrome-popup.png "Google Chrome extension - popup")
+![alt tag](https://github.com/johnjs/alex/blob/master/images/web-navbar.png "Google Chrome extension - result in the browser")
+![alt tag](https://github.com/johnjs/alex/blob/master/images/web.png "Alex-web - GUI")
+
 ====
 authors: D.M.M.&J.K.
