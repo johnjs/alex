@@ -6,7 +6,7 @@ Alex is a project supporting learning of new words and phrases. It consists of t
 
 ###Technologies
 ####alex-web
-	- framworks & libraries: expressjs, Angular.js, RequireJS,
+	- framworks & libraries: expressjs, Angular.js, RequireJS, underscore.js,
 	- database: MongoDB (with mongoose.js),
 	- tools: Grunt.js, Bower,
 	- testing: Karma, Mocha, Jasmine, Protractor, sinon.js,
@@ -17,10 +17,6 @@ Alex is a project supporting learning of new words and phrases. It consists of t
 	- tools: Grunt.js, Bower,
 	- testing: Karma, Jasmine,
 	- GUI: Twitter Bootstrap.
-
-![alt tag](https://github.com/johnjs/alex/blob/master/images/chrome-popup.png "Google Chrome extension - popup")
-![alt tag](https://github.com/johnjs/alex/blob/master/images/web-navbar.png "Google Chrome extension - result in the browser")
-![alt tag](https://github.com/johnjs/alex/blob/master/images/web.png "Alex-web - GUI")
 
 ====
 authors: D.M.M.&J.K.
