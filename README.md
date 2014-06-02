@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/johnjs/alex.svg?branch=master)](https://travis-ci.org/johnjs/alex)
+
 #alex
 
 Alex is a project supporting learning of new words and phrases. It consists of two sub-projects:
