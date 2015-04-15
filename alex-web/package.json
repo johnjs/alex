@@ -7,14 +7,15 @@
     "test": "grunt"
   },
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "chai": "*",
+    "connect-flash": "0.1.1",
     "express": "3.4.8",
     "jade": "*",
-    "chai": "*",
-    "underscore": "1.6.0",
-    "bcrypt-nodejs": "0.0.3",
     "passport": "0.2.0",
-    "connect-flash": "0.1.1",
-    "passport-local": "1.0.0"
+    "passport-facebook": "^2.0.0",
+    "passport-local": "1.0.0",
+    "underscore": "1.6.0"
   },
   "devDependencies": {
     "grunt": "*",
