@@ -1,0 +1,17 @@
+{
+    "http": {
+        "ENV": "development",
+        "PORT": 3000
+    },
+    "mongo": {
+        "DATABASE": "alex",
+        "HOSTNAME": "localhost"
+    },
+    "oauth": {
+        "FACEBOOK_APP_ID": "clientId",
+        "FACEBOOK_APP_SECRET": "alexSecretClient"
+    },
+    "session": {
+        "SECRET": "%al3xsecr3t&%"
+    }
+}

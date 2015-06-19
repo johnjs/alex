@@ -1,0 +1,10 @@
+{
+    "http": {
+        "ENV": "test",
+        "PORT": 3010
+    },
+    "mongo": {
+        "DATABASE": "alex-test",
+        "HOSTNAME": "localhost"
+    }
+}

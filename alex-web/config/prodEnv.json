@@ -1,0 +1,19 @@
+{
+    "mongo": {
+        "cmd": "mongod",
+        "database": "alex",
+        "hostname": "localhost",
+        "port": 27017
+    },
+    "node": {
+        "cmd": "forever start --minUptime=NODE_MINUPTIME --spinSleepTime=NODE_SPINSLEEPTIME app.js",
+        "env": "production",
+        "minUptime": 2000,
+        "port": 3000,
+        "spinSleepTime": 1000
+    },
+    "oauth": {
+        "FACEBOOK_APP_ID": "facebookAppId",
+        "FACEBOOK_APP_SECRET": "facebookAppSecret"
+    }
+}

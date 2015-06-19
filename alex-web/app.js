@@ -1,7 +1,8 @@
+var config = require('./config/config');
 var Application = require('./app/Application');
 var Database = require('./app/database/Database');
 
-var db = new Database('localhost', 'alex');
+var db = new Database(config.mongo.HOSTNAME, config.mongo.DATABASE);
+var app = new Application(config.http.PORT, db);
 
-var app = new Application(process.env.PORT || 3000, db);
 app.start();
