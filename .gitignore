@@ -3,6 +3,6 @@
 /*/.idea
 /*/dist/**/*
 .idea
-
+.env
 alex-chrome/app/libs
 alex-chrome/test/libs
