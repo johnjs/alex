@@ -10,7 +10,6 @@ module.exports = function(app, users, words, passport) {
     res.redirect('/login');
   }
 
-  //TODO[DoMi] Add tests
   function hasAccess(req, res, next) {
     if (req.isAuthenticated()) {
       return next();
@@ -20,6 +19,14 @@ module.exports = function(app, users, words, passport) {
 
   var usersRouting = require('./users')(users, passport);
   var wordsRouting = require('./words')(words);
+
+  app.get('/auth/facebook', passport.authenticate('facebook'));
+  app.get('/auth/facebook/callback',
+    passport.authenticate('facebook', {
+      successRedirect: '/',
+      failureRedirect: '/login'
+    })
+  );
 
   app.get('/', isLoggedIn, views.index);
   app.get('/login', views.login);
@@ -34,5 +41,4 @@ module.exports = function(app, users, words, passport) {
   app.post('/words/:id', hasAccess, wordsRouting.updateWord);
   app.del('/words/:id', hasAccess, wordsRouting.removeWord);
   app.post('/lessons', hasAccess, wordsRouting.findLessons);
-
 };

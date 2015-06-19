@@ -1,3 +1,5 @@
+var config = require('../../config/config');
+var FacebookStrategy = require('passport-facebook').Strategy;
 var LocalStrategy = require('passport-local').Strategy;
 
 module.exports = function(Users, passport) {
@@ -5,14 +7,8 @@ module.exports = function(Users, passport) {
     done(null, user.username);
   });
 
-  passport.deserializeUser(function(username, done) {
-    Users.findOne({
-      username: username
-    }).then(function(user) {
-      done(null, user);
-    }, function(err) {
-      done(err);
-    });
+  passport.deserializeUser(function(obj, done) {
+    done(null, obj);
   });
 
   passport.use('local-login', new LocalStrategy({
@@ -41,4 +37,16 @@ module.exports = function(Users, passport) {
       });
     }));
 
+  passport.use(new FacebookStrategy({
+      clientID: config.oauth.FACEBOOK_APP_ID,
+      clientSecret: config.oauth.FACEBOOK_APP_SECRET,
+      callbackURL: config.oauth.CALLBACK_URL
+    },
+    function(accessToken, refreshToken, profile, done) {
+      done(null, {
+        username: profile._json.id,
+        source: 'facebook'
+      });
+    }
+  ));
 };
