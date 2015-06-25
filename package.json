@@ -6,7 +6,8 @@
     "scripts": {
         "start": "./setup.sh; nf start",
         "prod": "./setup.sh; nf start web=1",
-        "test": "grunt"
+        "test": "grunt",
+        "postinstall": "cp config/devEnv.json .env"
     },
     "dependencies": {
         "bcrypt-nodejs": "0.0.3",
