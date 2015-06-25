@@ -1,8 +1,0 @@
-{
-    "name": "alex-chrome",
-    "private": true,
-    "dependencies": {},
-    "devDependencies": {
-        "angular-mocks": "~1.2.16"
-    }
-}

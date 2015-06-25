@@ -1,0 +1,755 @@
+{"level":"info","message":"Express server listening on port 3010","timestamp":"2015-06-19T15:19:03.748Z"}
+{"level":"info","message":"[2015-06-19T17:19:03+02:00][127.0.0.1] GET /login","timestamp":"2015-06-19T15:19:03.762Z"}
+{"level":"info","message":"[2015-06-19T17:19:03+02:00][127.0.0.1] GET /","timestamp":"2015-06-19T15:19:03.962Z"}
+{"username":"user","password":"pass","level":"info","message":"[2015-06-19T17:19:04+02:00][127.0.0.1] POST /login","timestamp":"2015-06-19T15:19:04.214Z"}
+{"username":"user","password":"incorrect password","level":"info","message":"[2015-06-19T17:19:04+02:00][127.0.0.1] POST /login","timestamp":"2015-06-19T15:19:04.440Z"}
+{"username":"thereIsNoSuchUser","password":"pass","level":"info","message":"[2015-06-19T17:19:04+02:00][127.0.0.1] POST /login","timestamp":"2015-06-19T15:19:04.667Z"}
+{"username":"user","password":"pass","level":"info","message":"[2015-06-19T17:19:04+02:00][127.0.0.1] POST /login","timestamp":"2015-06-19T15:19:04.671Z"}
+{"level":"info","message":"[2015-06-19T17:19:04+02:00][127.0.0.1] GET /logout","timestamp":"2015-06-19T15:19:04.899Z"}
+{"level":"info","message":"[2015-06-19T17:19:04+02:00][127.0.0.1] GET /","timestamp":"2015-06-19T15:19:04.902Z"}
+{"level":"info","message":"Express server listening on port 3010","timestamp":"2015-06-19T15:19:04.906Z"}
+{"username":"testuser","password":"testpass","level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] POST /login","timestamp":"2015-06-19T15:19:05.133Z"}
+{"level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] POST /words","timestamp":"2015-06-19T15:19:05.366Z"}
+{"username":"testuser","level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] POST /words","timestamp":"2015-06-19T15:19:05.374Z"}
+{"username":"testuser","lessonId":"lesson1","level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] POST /words","timestamp":"2015-06-19T15:19:05.381Z"}
+{"username":"testuser","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] PUT /words","timestamp":"2015-06-19T15:19:05.388Z"}
+{"username":"testuser","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] PUT /words","timestamp":"2015-06-19T15:19:05.401Z"}
+{"level":"warn","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2015-06-19T15:19:05.402Z"}
+{"word":"hello","translation":"witaj","level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] POST /words/558432e917126dac88dd3f77","timestamp":"2015-06-19T15:19:05.412Z"}
+{"level":"warn","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] TypeError: Object.keys called on non-object","timestamp":"2015-06-19T15:19:05.415Z"}
+{"level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] DELETE /words/558432e917126dac88dd3f7c","timestamp":"2015-06-19T15:19:05.425Z"}
+{"level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] Word removed!","timestamp":"2015-06-19T15:19:05.428Z"}
+{"level":"info","message":"[2015-06-19T17:19:05+02:00][127.0.0.1] GET /logout","timestamp":"2015-06-19T15:19:05.434Z"}
+{"level":"info","message":"Express server listening on port 3010","timestamp":"2015-06-25T19:36:43.712Z"}
+{"level":"info","message":"[2015-06-25T21:36:43+02:00][127.0.0.1] GET /login","timestamp":"2015-06-25T19:36:43.728Z"}
+{"level":"info","message":"[2015-06-25T21:36:43+02:00][127.0.0.1] GET /","timestamp":"2015-06-25T19:36:43.998Z"}
+{"level":"info","message":"Express server listening on port 3010","timestamp":"2015-06-25T19:36:48.006Z"}
+{"level":"info","message":"[2015-06-25T21:36:50+02:00][127.0.0.1] GET /logout","timestamp":"2015-06-25T19:36:50.011Z"}
+{"level":"info","message":"Express server listening on port 3010","timestamp":"2015-06-25T19:37:03.967Z"}
+{"level":"info","message":"[2015-06-25T21:37:03+02:00][127.0.0.1] GET /login","timestamp":"2015-06-25T19:37:03.980Z"}
+{"level":"info","message":"[2015-06-25T21:37:04+02:00][127.0.0.1] GET /","timestamp":"2015-06-25T19:37:04.239Z"}
+{"username":"user","password":"pass","level":"info","message":"[2015-06-25T21:37:04+02:00][127.0.0.1] POST /login","timestamp":"2015-06-25T19:37:04.485Z"}
+{"username":"user","password":"incorrect password","level":"info","message":"[2015-06-25T21:37:04+02:00][127.0.0.1] POST /login","timestamp":"2015-06-25T19:37:04.720Z"}
+{"username":"thereIsNoSuchUser","password":"pass","level":"info","message":"[2015-06-25T21:37:04+02:00][127.0.0.1] POST /login","timestamp":"2015-06-25T19:37:04.949Z"}
+{"username":"user","password":"pass","level":"info","message":"[2015-06-25T21:37:04+02:00][127.0.0.1] POST /login","timestamp":"2015-06-25T19:37:04.953Z"}
+{"level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] GET /logout","timestamp":"2015-06-25T19:37:05.177Z"}
+{"level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] GET /","timestamp":"2015-06-25T19:37:05.180Z"}
+{"level":"info","message":"Express server listening on port 3010","timestamp":"2015-06-25T19:37:05.184Z"}
+{"username":"testuser","password":"testpass","level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] POST /login","timestamp":"2015-06-25T19:37:05.412Z"}
+{"level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] POST /words","timestamp":"2015-06-25T19:37:05.646Z"}
+{"username":"testuser","level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] POST /words","timestamp":"2015-06-25T19:37:05.656Z"}
+{"username":"testuser","lessonId":"lesson1","level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] POST /words","timestamp":"2015-06-25T19:37:05.665Z"}
+{"username":"testuser","lessonId":"lesson1","word":"dinner","translation":"obiad","level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] PUT /words","timestamp":"2015-06-25T19:37:05.673Z"}
+{"username":"testuser","lessonId":"lesson1","translation":"obiad","level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] PUT /words","timestamp":"2015-06-25T19:37:05.693Z"}
+{"level":"warn","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] All fields of a model must be set","timestamp":"2015-06-25T19:37:05.694Z"}
+{"word":"hello","translation":"witaj","level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] POST /words/558c58615123382313071f7f","timestamp":"2015-06-25T19:37:05.704Z"}
+{"level":"warn","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] TypeError: Object.keys called on non-object","timestamp":"2015-06-25T19:37:05.712Z"}
+{"level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] DELETE /words/558c58615123382313071f84","timestamp":"2015-06-25T19:37:05.722Z"}
+{"level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] Word removed!","timestamp":"2015-06-25T19:37:05.725Z"}
+{"level":"info","message":"[2015-06-25T21:37:05+02:00][127.0.0.1] GET /logout","timestamp":"2015-06-25T19:37:05.737Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:27.725Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:28.026Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:28.339Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:28.642Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:28.942Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:29.242Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:29.541Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:29.840Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:30.136Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:30.437Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:30.751Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:31.075Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:31.376Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:31.671Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:31.968Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:32.271Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:32.571Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:32.874Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:33.180Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:33.480Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:33.777Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:34.099Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:34.399Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:34.698Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:34.998Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:35.296Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:35.594Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:35.897Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:36.198Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:36.497Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:36.799Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:37.100Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:37.397Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:37.693Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:37.996Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:38.306Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:38.613Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:38.944Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:39.250Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:39.552Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:40.158Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:40.461Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:40.764Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:41.073Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:41.827Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:42.562Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:42.917Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:43.288Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:44.425Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:44.791Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:44.872Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:45.138Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:45.218Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:45.498Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:45.560Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:45.899Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:45.940Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:46.347Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:46.644Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:46.692Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:47.069Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:47.742Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:47.809Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:48.084Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:48.139Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:48.541Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:48.884Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:49.232Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:49.574Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:49.870Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:49.895Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:50.689Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:50.703Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:51.379Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:51.726Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:52.122Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:52.151Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:54.370Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:56.109Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:57.575Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:59.319Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:37:59.453Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:00.581Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:00.729Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:01.954Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:02.189Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:03.227Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:03.569Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:04.731Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:05.336Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:06.343Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:06.772Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:07.950Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:08.387Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:09.456Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:09.869Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:11.122Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:11.607Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:13.119Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:14.129Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:14.595Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:15.539Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:16.023Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:17.103Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:17.537Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:19.003Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:20.510Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:21.024Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:22.149Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:22.649Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:24.012Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:26.262Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:26.410Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:26.706Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:26.845Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:27.092Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:27.262Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:27.460Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:28.018Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:28.218Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:28.782Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:29.200Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:29.394Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:29.565Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:29.922Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:30.111Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:30.470Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:30.639Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:30.909Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:31.133Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:31.366Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:31.566Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:31.797Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:31.969Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:32.168Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:32.378Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:32.865Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:33.041Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:33.395Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:33.615Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:33.776Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:34.146Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:34.363Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:34.509Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:34.710Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:34.881Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:35.081Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:35.239Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:36.007Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:36.397Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:36.538Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:36.750Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:37.252Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:37.407Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:37.607Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:37.784Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:37.981Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:38.155Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:38.520Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:38.759Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:38.919Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:39.593Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:39.749Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:39.965Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:40.118Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:40.334Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:40.534Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:40.872Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:41.027Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:41.272Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:41.421Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:41.841Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:42.086Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:42.233Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:42.460Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:42.624Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:42.869Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:42.994Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:43.242Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:43.374Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:43.616Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:44.030Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:44.124Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:44.393Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:44.481Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:44.752Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:44.823Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:45.127Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:45.207Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:45.559Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:45.917Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:46.252Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:46.275Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:46.612Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:46.669Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:47.093Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:47.462Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:47.505Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:47.863Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:48.235Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:48.271Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:48.673Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:48.958Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:49.043Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:49.326Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:49.421Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:49.693Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:49.783Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:50.152Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:50.442Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:50.561Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:50.946Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:51.218Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:51.305Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:52.788Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:52.921Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:53.446Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:53.544Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:54.231Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:54.463Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:54.603Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:54.938Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:55.203Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:55.313Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:55.619Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:55.709Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:55.962Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:56.069Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:56.336Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:56.684Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:56.789Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:57.056Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:57.169Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:57.418Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:57.537Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:57.806Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:57.910Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:58.265Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:58.511Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:58.630Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:58.979Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:59.309Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:59.625Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:38:59.698Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:00.016Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:00.089Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:00.443Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:00.503Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:00.818Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:01.228Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:01.337Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:01.635Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:01.765Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:02.012Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:02.141Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:02.392Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:02.515Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:02.809Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:02.888Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:03.176Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:03.248Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:03.559Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:03.936Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:04.001Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:04.272Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:04.352Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:04.702Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:04.862Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:05.133Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:05.257Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:05.494Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:05.651Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:05.867Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:06.000Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:06.243Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:06.401Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:06.606Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:06.793Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:07.182Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:07.366Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:07.547Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:07.735Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:07.899Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:08.128Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:08.269Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:08.520Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:08.676Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:08.914Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:09.054Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:09.790Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:09.947Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:10.159Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:10.301Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:10.572Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:10.960Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:11.101Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:11.337Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:11.507Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:11.706Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:11.849Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:12.092Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:12.239Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:12.466Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:12.616Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:12.826Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:12.976Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:13.187Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:13.330Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:13.558Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:13.670Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:13.944Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:14.062Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:14.283Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:14.639Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:14.804Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:15.008Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:15.167Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:15.365Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:15.523Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:16.000Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:16.203Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:16.636Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:16.881Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:16.992Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:17.237Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:17.344Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:17.596Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:17.714Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:17.993Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:18.120Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:18.365Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:18.478Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:18.880Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:19.188Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:19.307Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:19.553Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:19.661Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:19.929Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:20.079Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:20.386Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:20.785Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:20.927Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:21.157Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:21.402Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:21.794Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:21.989Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:22.560Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:22.722Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:23.395Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:23.671Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:24.036Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:24.206Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:24.446Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:24.557Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:24.893Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:25.070Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:25.376Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:25.539Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:25.823Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:25.961Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:26.171Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:26.321Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:26.533Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:26.708Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:26.909Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:27.074Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:27.245Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:27.425Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:27.991Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:28.365Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:28.631Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:28.878Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:29.060Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:29.256Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:29.440Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:29.675Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:29.904Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:30.229Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:30.459Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:30.747Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:30.927Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:31.142Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:31.342Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:31.594Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:31.885Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:32.168Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:32.446Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:32.630Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:32.929Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:33.084Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:33.490Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:33.770Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:33.938Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:34.204Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:34.362Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:34.631Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:34.793Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:35.075Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:35.279Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:35.554Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:35.689Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:36.015Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:36.144Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:36.830Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:37.050Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:37.398Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:37.536Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:37.747Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:38.469Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:38.812Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:39.314Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:39.448Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:39.787Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:39.893Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:40.157Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:40.539Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:41.125Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:41.256Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:41.651Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:41.785Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:42.201Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:42.349Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:42.729Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:42.881Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:43.240Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:43.491Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:43.999Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:44.135Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:44.392Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:44.616Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:45.369Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:45.561Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:45.913Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:46.228Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:46.458Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:46.671Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:47.603Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:47.852Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:48.028Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:49.353Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:49.504Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:49.684Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:49.935Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:50.186Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:50.364Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:50.741Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:50.930Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:51.248Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:51.411Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:51.915Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:53.210Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:53.725Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:53.883Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:54.122Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:54.236Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:54.677Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:54.759Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:55.086Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:55.639Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:55.715Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:56.346Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:56.424Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:56.666Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:57.294Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:57.380Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:57.639Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:57.846Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:58.193Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:58.285Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:58.530Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:58.630Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:58.881Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:58.980Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:59.293Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:59.353Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:59.652Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:39:59.727Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:00.025Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:00.102Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:00.439Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:00.787Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:01.037Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:01.114Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:01.398Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:01.471Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:02.136Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:02.234Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:02.456Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:02.565Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:03.201Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:03.718Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:04.573Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:04.769Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:05.037Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:05.301Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:05.445Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:05.641Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:05.833Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:06.060Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:06.258Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:06.921Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:07.090Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:07.486Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:07.787Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:07.993Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:08.546Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:08.692Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:08.914Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:09.039Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:09.276Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:09.436Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:09.634Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:09.813Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:09.998Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:10.184Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:10.365Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:10.578Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:11.020Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:11.154Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:11.370Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:11.507Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:11.726Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:11.898Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:12.148Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:12.308Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:12.497Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:12.644Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:12.860Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:13.000Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:13.398Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:13.588Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:13.729Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:13.950Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:14.057Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:14.375Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:14.422Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:14.792Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:15.068Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:15.120Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:15.448Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:15.516Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:15.939Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:16.321Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:16.369Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:16.777Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:17.251Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:17.715Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:17.803Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:18.220Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:18.253Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:18.612Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:19.124Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:19.337Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:19.682Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:19.975Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:20.315Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:20.558Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:20.833Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:21.401Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:21.609Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:21.635Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:21.931Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:22.131Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:22.158Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:22.467Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:22.677Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:22.722Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:23.039Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:23.229Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:23.287Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:23.595Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:23.821Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:23.868Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:24.184Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:24.350Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:24.439Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:24.715Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:24.896Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:25.005Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:25.298Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:25.532Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:26.011Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:26.068Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:26.377Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:26.570Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:26.648Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:26.918Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:27.131Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:27.216Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:27.456Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:27.659Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:27.882Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:28.026Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:28.284Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:28.436Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:28.543Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:28.870Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:29.013Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:29.114Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:29.434Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:29.558Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:29.594Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:29.948Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:30.094Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:30.140Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:30.557Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:30.709Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:31.105Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:31.215Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:31.611Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:31.745Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:32.175Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:32.272Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:32.341Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:32.717Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:32.794Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:32.824Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:40:33.388Z"}
+{"level":"info","message":"[2015-06-25T21:40:37+02:00][127.0.0.1] GET /","timestamp":"2015-06-25T19:40:37.221Z"}
+{"level":"info","message":"[2015-06-25T21:40:37+02:00][127.0.0.1] GET /login","timestamp":"2015-06-25T19:40:37.234Z"}
+{"level":"info","message":"[2015-06-25T21:40:38+02:00][127.0.0.1] GET /libs/bootstrap/dist/css/bootstrap.min.css","timestamp":"2015-06-25T19:40:38.040Z"}
+{"level":"info","message":"[2015-06-25T21:40:38+02:00][127.0.0.1] GET /stylesheets/loginPage.css","timestamp":"2015-06-25T19:40:38.043Z"}
+{"level":"info","message":"[2015-06-25T21:40:38+02:00][127.0.0.1] GET /images/words.jpg","timestamp":"2015-06-25T19:40:38.045Z"}
+{"level":"info","message":"[2015-06-25T21:40:38+02:00][127.0.0.1] GET /libs/jquery/dist/jquery.min.js","timestamp":"2015-06-25T19:40:38.046Z"}
+{"level":"info","message":"[2015-06-25T21:40:38+02:00][127.0.0.1] GET /libs/bootstrap/dist/js/bootstrap.min.js","timestamp":"2015-06-25T19:40:38.050Z"}
+{"level":"info","message":"[2015-06-25T21:40:38+02:00][127.0.0.1] GET /images/login-with-facebook.png","timestamp":"2015-06-25T19:40:38.068Z"}
+{"level":"info","message":"[2015-06-25T21:40:38+02:00][127.0.0.1] GET /libs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff","timestamp":"2015-06-25T19:40:38.182Z"}
+{"level":"info","message":"[2015-06-25T21:40:39+02:00][127.0.0.1] GET /auth/facebook","timestamp":"2015-06-25T19:40:39.413Z"}
+{"level":"info","message":"[2015-06-25T21:40:48+02:00][127.0.0.1] GET /auth/facebook/callback?code=AQCP41dbUg-gsMdzJUxSw9MgiWQfo7c13XZEs-kSVi9EqyEP0avTaYWMGzI1A1fA8lweDomE2Pqs2ubekv4xj2-TcpEH6HexM1z0nrWVVGVStDnFSiKzSTrKOyw_VDNHdfMdtVaTv_He0jqvAgg87n1EZQQ63pqmJctTO6339SBtqXcbF4_04HBVFt0afD3pR3uMs9MVPmSsyVPHFUIVDfFm826-A3TbUx8Xl1x7d5LH8QMC3IUJ5PWsHsYadRmkg87U5-BfrfFxD8WYiI_Y4wecZ1-GJ1CWgOdA3Kdbkcmp1kdvBKBDY0845z6F2FovcNaeuPAWsB1JobjG3se6JRTP","timestamp":"2015-06-25T19:40:48.580Z"}
+{"level":"info","message":"[2015-06-25T21:40:50+02:00][127.0.0.1] GET /","timestamp":"2015-06-25T19:40:50.226Z"}
+{"level":"info","message":"[2015-06-25T21:40:50+02:00][127.0.0.1] GET /stylesheets/style.css","timestamp":"2015-06-25T19:40:50.532Z"}
+{"level":"info","message":"[2015-06-25T21:40:50+02:00][127.0.0.1] GET /libs/bootstrap/dist/css/bootstrap.min.css","timestamp":"2015-06-25T19:40:50.534Z"}
+{"level":"info","message":"[2015-06-25T21:40:50+02:00][127.0.0.1] GET /libs/jquery/dist/jquery.min.js","timestamp":"2015-06-25T19:40:50.537Z"}
+{"level":"info","message":"[2015-06-25T21:40:50+02:00][127.0.0.1] GET /libs/bootstrap/dist/js/bootstrap.min.js","timestamp":"2015-06-25T19:40:50.537Z"}
+{"level":"info","message":"[2015-06-25T21:40:50+02:00][127.0.0.1] GET /libs/requirejs/require.js","timestamp":"2015-06-25T19:40:50.540Z"}
+{"level":"info","message":"[2015-06-25T21:40:50+02:00][127.0.0.1] GET /javascripts/main.js","timestamp":"2015-06-25T19:40:50.804Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/routes/routes.js","timestamp":"2015-06-25T19:40:51.425Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /libs/angular/angular.min.js","timestamp":"2015-06-25T19:40:51.437Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/alexApp.js","timestamp":"2015-06-25T19:40:51.441Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/controllers/MainCtrl.js","timestamp":"2015-06-25T19:40:51.452Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/factories/Lesson.js","timestamp":"2015-06-25T19:40:51.454Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/factories/Word.js","timestamp":"2015-06-25T19:40:51.455Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/directives/lessons.js","timestamp":"2015-06-25T19:40:51.456Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/directives/words.js","timestamp":"2015-06-25T19:40:51.458Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/directives/word.js","timestamp":"2015-06-25T19:40:51.459Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/directives/lessonCreator.js","timestamp":"2015-06-25T19:40:51.466Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /javascripts/directives/wordCreator.js","timestamp":"2015-06-25T19:40:51.471Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /libs/angular-route/angular-route.min.js","timestamp":"2015-06-25T19:40:51.473Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /libs/angular-animate/angular-animate.min.js","timestamp":"2015-06-25T19:40:51.477Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /libs/underscore/underscore.js","timestamp":"2015-06-25T19:40:51.513Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /views/partials/main","timestamp":"2015-06-25T19:40:51.684Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /views/partials/lessons","timestamp":"2015-06-25T19:40:51.727Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /views/partials/words","timestamp":"2015-06-25T19:40:51.732Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /views/partials/lessonCreator","timestamp":"2015-06-25T19:40:51.780Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] POST /lessons","timestamp":"2015-06-25T19:40:51.794Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /libs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff","timestamp":"2015-06-25T19:40:51.819Z"}
+{"level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] GET /views/partials/wordCreator","timestamp":"2015-06-25T19:40:51.827Z"}
+{"lessonId":"Lesson1","level":"info","message":"[2015-06-25T21:40:51+02:00][127.0.0.1] POST /words","timestamp":"2015-06-25T19:40:51.903Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:09.760Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:10.029Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:10.066Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:10.189Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:10.544Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:11.154Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:11.430Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:11.443Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:11.611Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:11.879Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:11.915Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:12.344Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:12.561Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:12.786Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:12.820Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:13.069Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:13.252Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:13.272Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:13.497Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:13.721Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:13.743Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:13.997Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:14.174Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:14.203Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:14.459Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:14.639Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:14.672Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:14.958Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:15.090Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:15.128Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:15.416Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:15.550Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:15.576Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:16.023Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:16.420Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:16.822Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:16.845Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:16.872Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:17.258Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:17.304Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:17.715Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:17.743Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:17.759Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:18.176Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:18.195Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:18.649Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:19.136Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-06-25T19:41:19.164Z"}

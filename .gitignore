@@ -1,8 +1,6 @@
-/*/node_modules
-/*/public/libs
-/*/.idea
-/*/dist/**/*
+/node_modules
+/public/libs
 .idea
 .env
-alex-chrome/app/libs
-alex-chrome/test/libs
+npm-debug.log
+.DS_Store

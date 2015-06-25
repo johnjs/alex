@@ -6,8 +6,6 @@ services:
 before_install:
   - npm install -g grunt-cli
   - npm install -g bower
-  - cd alex-web/ && npm install && bower install
-  - cd ../alex-chrome/ && npm install && bower install && cd ..
+  - ./setup.sh
 script:
-   - npm run-script alex-web
-   - npm run-script alex-chrome
+   - grunt
