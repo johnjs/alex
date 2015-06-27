@@ -6,12 +6,8 @@
         "port": 27017
     },
     "node": {
-        "cmd": "nodemon --debug .",
+        "cmd": "nodemon --debug app.js",
         "env": "development",
         "port": 3000
-    },
-    "oauth": {
-        "FACEBOOK_APP_ID": "facebookAppId",
-        "FACEBOOK_APP_SECRET": "facebookAppSecret"
     }
 }
