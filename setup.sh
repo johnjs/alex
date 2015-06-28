@@ -6,8 +6,7 @@ if [ -z $(which npm) ]; then
 fi
 
 if [ -z $(which bower) ]; then
-    echo "bower missing. "
-    exit 1
+    npm install bower
 fi
 
 npm install

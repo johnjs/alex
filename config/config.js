@@ -10,6 +10,9 @@ config.http.PORT = process.env.NODE_PORT || config.http.PORT;
 
 config.mongo.DATABASE = process.env.MONGO_DATABASE || config.mongo.DATABASE;
 config.mongo.HOSTNAME = process.env.MONGO_HOSTNAME || config.mongo.HOSTNAME;
+config.mongo.PORT = process.env.MONGO_PORT || config.mongo.PORT;
+config.mongo.USERNAME = process.env.MONGO_USERNAME || config.mongo.USERNAME;
+config.mongo.PASSWORD = process.env.MONGO_PASSWORD || config.mongo.PASSWORD;
 
 config.oauth.FACEBOOK_APP_ID = process.env.OAUTH_FACEBOOK_APP_ID || config.oauth.FACEBOOK_APP_ID;
 config.oauth.FACEBOOK_APP_SECRET = process.env.OAUTH_FACEBOOK_APP_SECRET || config.oauth.FACEBOOK_APP_SECRET;
