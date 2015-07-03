@@ -5,6 +5,7 @@
     },
     "mongo": {
         "DATABASE": "alex-test",
-        "HOSTNAME": "localhost"
+        "HOSTNAME": "localhost",
+        "PORT": 27017
     }
 }

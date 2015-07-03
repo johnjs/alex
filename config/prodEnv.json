@@ -1,7 +1,0 @@
-{
-    "node": {
-        "cmd": "nodemon --debug app.js",
-        "env": "development",
-        "port": 3000
-    }
-}

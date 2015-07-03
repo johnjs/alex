@@ -1,15 +1,12 @@
 {
     "http": {
-        "ENV": "development",
         "PORT": 3000
     },
-    "mongo": {
-        "DATABASE": "alex",
-        "HOSTNAME": "localhost"
-    },
+    "mongo": {},
     "oauth": {
         "FACEBOOK_APP_ID": "clientId",
-        "FACEBOOK_APP_SECRET": "alexSecretClient"
+        "FACEBOOK_APP_SECRET": "alexSecretClient",
+        "CALLBACK_PATH": "/auth/facebook/callback"
     },
     "session": {
         "SECRET": "%al3xsecr3t&%"
